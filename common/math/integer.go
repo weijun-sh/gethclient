@@ -56,6 +56,20 @@ func (i HexOrDecimal64) MarshalText() ([]byte, error) {
 	return []byte(fmt.Sprintf("%#x", uint64(i))), nil
 }
 
+// ParseInt parses s as an integer in decimal syntax
+func ParseInt(s string) (int, error) {
+	return strconv.Atoi(s)
+}
+
+// MustParseInt parses s as an integer and panics if the string is invalid.
+func MustParseInt(s string) int {
+	v, err := ParseInt(s)
+	if err != nil {
+		panic("invalid signed integer: " + s)
+	}
+	return v
+}
+
 // ParseUint64 parses s as an integer in decimal or hexadecimal syntax.
 // Leading zeros are accepted. The empty string parses as zero.
 func ParseUint64(s string) (uint64, bool) {
