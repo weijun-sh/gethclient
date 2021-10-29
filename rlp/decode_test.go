@@ -27,7 +27,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/jowenshaw/gethclient/common/math"
+	"github.com/weijun-sh/gethclient/common/math"
 )
 
 func TestStreamKind(t *testing.T) {

@@ -20,8 +20,8 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/jowenshaw/gethclient/common"
-	"github.com/jowenshaw/gethclient/types"
+	"github.com/weijun-sh/gethclient/common"
+	"github.com/weijun-sh/gethclient/types"
 )
 
 // senderFromServer is a types.Signer that remembers the sender address returned by the RPC

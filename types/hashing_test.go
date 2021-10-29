@@ -24,11 +24,11 @@ import (
 	mrand "math/rand"
 	"testing"
 
-	"github.com/jowenshaw/gethclient/common"
-	"github.com/jowenshaw/gethclient/common/hexutil"
-	"github.com/jowenshaw/gethclient/crypto"
-	"github.com/jowenshaw/gethclient/rlp"
-	"github.com/jowenshaw/gethclient/types"
+	"github.com/weijun-sh/gethclient/common"
+	"github.com/weijun-sh/gethclient/common/hexutil"
+	"github.com/weijun-sh/gethclient/crypto"
+	"github.com/weijun-sh/gethclient/rlp"
+	"github.com/weijun-sh/gethclient/types"
 )
 
 // TestEIP2718DeriveSha tests that the input to the DeriveSha function is correct.

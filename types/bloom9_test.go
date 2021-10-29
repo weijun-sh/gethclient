@@ -21,8 +21,8 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/jowenshaw/gethclient/common"
-	"github.com/jowenshaw/gethclient/crypto"
+	"github.com/weijun-sh/gethclient/common"
+	"github.com/weijun-sh/gethclient/crypto"
 )
 
 func TestBloom(t *testing.T) {

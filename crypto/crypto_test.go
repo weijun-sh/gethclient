@@ -26,8 +26,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/jowenshaw/gethclient/common"
-	"github.com/jowenshaw/gethclient/common/hexutil"
+	"github.com/weijun-sh/gethclient/common"
+	"github.com/weijun-sh/gethclient/common/hexutil"
 )
 
 var testAddrHex = "970e8128ab834e8eac17ab8e3812f010678cf791"

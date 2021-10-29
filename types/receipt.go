@@ -24,9 +24,9 @@ import (
 	"math/big"
 	"unsafe"
 
-	"github.com/jowenshaw/gethclient/common"
-	"github.com/jowenshaw/gethclient/common/hexutil"
-	"github.com/jowenshaw/gethclient/rlp"
+	"github.com/weijun-sh/gethclient/common"
+	"github.com/weijun-sh/gethclient/common/hexutil"
+	"github.com/weijun-sh/gethclient/rlp"
 )
 
 //go:generate gencodec -type Receipt -field-override receiptMarshaling -out gen_receipt_json.go

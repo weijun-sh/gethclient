@@ -19,9 +19,9 @@ package types
 import (
 	"io"
 
-	"github.com/jowenshaw/gethclient/common"
-	"github.com/jowenshaw/gethclient/common/hexutil"
-	"github.com/jowenshaw/gethclient/rlp"
+	"github.com/weijun-sh/gethclient/common"
+	"github.com/weijun-sh/gethclient/common/hexutil"
+	"github.com/weijun-sh/gethclient/rlp"
 )
 
 //go:generate gencodec -type Log -field-override logMarshaling -out gen_log_json.go

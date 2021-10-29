@@ -22,8 +22,8 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/jowenshaw/gethclient/common"
-	"github.com/jowenshaw/gethclient/types"
+	"github.com/weijun-sh/gethclient/common"
+	"github.com/weijun-sh/gethclient/types"
 )
 
 // NotFound is returned by API methods if the requested item does not exist.

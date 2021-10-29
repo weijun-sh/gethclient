@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/jowenshaw/gethclient/common"
+	"github.com/weijun-sh/gethclient/common"
 )
 
 // MarshalJSON marshals as JSON.

@@ -20,9 +20,9 @@ import (
 	"bytes"
 	"sync"
 
-	"github.com/jowenshaw/gethclient/common"
-	"github.com/jowenshaw/gethclient/crypto"
-	"github.com/jowenshaw/gethclient/rlp"
+	"github.com/weijun-sh/gethclient/common"
+	"github.com/weijun-sh/gethclient/crypto"
+	"github.com/weijun-sh/gethclient/rlp"
 	"golang.org/x/crypto/sha3"
 )
 

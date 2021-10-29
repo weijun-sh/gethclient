@@ -19,7 +19,7 @@ package types
 import (
 	"math/big"
 
-	"github.com/jowenshaw/gethclient/common"
+	"github.com/weijun-sh/gethclient/common"
 )
 
 type DynamicFeeTx struct {

@@ -22,9 +22,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/jowenshaw/gethclient/common"
-	"github.com/jowenshaw/gethclient/common/hexutil"
-	"github.com/jowenshaw/gethclient/common/math"
+	"github.com/weijun-sh/gethclient/common"
+	"github.com/weijun-sh/gethclient/common/hexutil"
+	"github.com/weijun-sh/gethclient/common/math"
 )
 
 var (

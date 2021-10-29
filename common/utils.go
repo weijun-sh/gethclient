@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	cmath "github.com/jowenshaw/gethclient/common/math"
+	cmath "github.com/weijun-sh/gethclient/common/math"
 	"golang.org/x/crypto/sha3"
 )
 

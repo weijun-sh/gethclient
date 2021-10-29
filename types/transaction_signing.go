@@ -22,8 +22,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/jowenshaw/gethclient/common"
-	"github.com/jowenshaw/gethclient/crypto"
+	"github.com/weijun-sh/gethclient/common"
+	"github.com/weijun-sh/gethclient/crypto"
 )
 
 var ErrInvalidChainId = errors.New("invalid chain id for signer")

@@ -5,7 +5,7 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/jowenshaw/gethclient/common"
+	"github.com/weijun-sh/gethclient/common"
 	amino "github.com/tendermint/go-amino"
 )
 

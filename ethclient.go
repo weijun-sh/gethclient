@@ -24,11 +24,11 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/jowenshaw/gethclient/common"
-	"github.com/jowenshaw/gethclient/common/hexutil"
-	"github.com/jowenshaw/gethclient/types"
-	"github.com/jowenshaw/gethclient/types/ethereum"
-	rpc "github.com/jowenshaw/gethrpc"
+	"github.com/weijun-sh/gethclient/common"
+	"github.com/weijun-sh/gethclient/common/hexutil"
+	"github.com/weijun-sh/gethclient/types"
+	"github.com/weijun-sh/gethclient/types/ethereum"
+	rpc "github.com/weijun-sh/gethrpc"
 )
 
 // Client defines typed wrappers for the Ethereum RPC API.
