@@ -372,11 +372,7 @@ func (tx *Transaction) Hash() common.Hash {
 
 	var h common.Hash
 	if tx.Type() == LegacyTxType {
-		if tx.IsAminoCodec() {
-			h, _ = CalcAminoHash(tx)
-		} else {
-			h = rlpHash(tx.inner)
-		}
+		h = rlpHash(tx.inner)
 	} else {
 		h = prefixedRlpHash(tx.Type(), tx.inner)
 	}
