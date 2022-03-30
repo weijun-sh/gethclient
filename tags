@@ -1,0 +1,1180 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AccessList	types/access_list_tx.go	/^type AccessList []AccessTuple$/;"	t
+AccessList	types/transaction.go	/^func (m Message) AccessList() AccessList { return m.accessList }$/;"	f
+AccessList	types/transaction.go	/^func (tx *Transaction) AccessList() AccessList { return tx.inner.accessList() }$/;"	f
+AccessListTx	types/access_list_tx.go	/^type AccessListTx struct {$/;"	t
+AccessListTxType	types/transaction.go	/^	AccessListTxType$/;"	c
+AccessTuple	types/access_list_tx.go	/^type AccessTuple struct {$/;"	t
+AccountResult	gethclient/gethclient.go	/^type AccountResult struct {$/;"	t
+Add	types/bloom9.go	/^func (b *Bloom) Add(d []byte) {$/;"	f
+Address	common/types.go	/^func (ma *MixedcaseAddress) Address() Address {$/;"	f
+Address	common/types.go	/^type Address [AddressLength]byte$/;"	t
+AddressLength	common/types.go	/^	AddressLength = 20$/;"	c
+AppendUint64	rlp/raw.go	/^func AppendUint64(b []byte, i uint64) []byte {$/;"	f
+AsMessage	types/transaction.go	/^func (tx *Transaction) AsMessage(s Signer, baseFee *big.Int) (Message, error) {$/;"	f
+BalanceAt	ethclient.go	/^func (ec *Client) BalanceAt(ctx context.Context, account common.Address, blockNumber *big.Int) (*big.Int, error) {$/;"	f
+BaseFee	types/block.go	/^func (b *Block) BaseFee() *big.Int {$/;"	f
+BenchmarkAddressHex	common/types_test.go	/^func BenchmarkAddressHex(b *testing.B) {$/;"	f
+BenchmarkBloom9	types/bloom9_test.go	/^func BenchmarkBloom9(b *testing.B) {$/;"	f
+BenchmarkBloom9Lookup	types/bloom9_test.go	/^func BenchmarkBloom9Lookup(b *testing.B) {$/;"	f
+BenchmarkByteAt	common/math/big_test.go	/^func BenchmarkByteAt(b *testing.B) {$/;"	f
+BenchmarkByteAtBrandNew	common/math/big_test.go	/^func BenchmarkByteAtBrandNew(b *testing.B) {$/;"	f
+BenchmarkByteAtOld	common/math/big_test.go	/^func BenchmarkByteAtOld(b *testing.B) {$/;"	f
+BenchmarkCreateBloom	types/bloom9_test.go	/^func BenchmarkCreateBloom(b *testing.B) {$/;"	f
+BenchmarkDecodeBigInts	rlp/decode_test.go	/^func BenchmarkDecodeBigInts(b *testing.B) {$/;"	f
+BenchmarkDecodeByteArrayStruct	rlp/decode_test.go	/^func BenchmarkDecodeByteArrayStruct(b *testing.B) {$/;"	f
+BenchmarkDecodeUints	rlp/decode_test.go	/^func BenchmarkDecodeUints(b *testing.B) {$/;"	f
+BenchmarkDecodeUintsReused	rlp/decode_test.go	/^func BenchmarkDecodeUintsReused(b *testing.B) {$/;"	f
+BenchmarkDecompressPubkey	crypto/signature_test.go	/^func BenchmarkDecompressPubkey(b *testing.B) {$/;"	f
+BenchmarkEcrecoverSignature	crypto/signature_test.go	/^func BenchmarkEcrecoverSignature(b *testing.B) {$/;"	f
+BenchmarkEncodeBigInts	rlp/encode_test.go	/^func BenchmarkEncodeBigInts(b *testing.B) {$/;"	f
+BenchmarkEncodeBlock	types/block_test.go	/^func BenchmarkEncodeBlock(b *testing.B) {$/;"	f
+BenchmarkEncodeByteArrayStruct	rlp/encode_test.go	/^func BenchmarkEncodeByteArrayStruct(b *testing.B) {$/;"	f
+BenchmarkEncodeConcurrentInterface	rlp/encode_test.go	/^func BenchmarkEncodeConcurrentInterface(b *testing.B) {$/;"	f
+BenchmarkIntsize	rlp/encode_test.go	/^func BenchmarkIntsize(b *testing.B) {$/;"	f
+BenchmarkPaddedBigBytesLargePadding	common/math/big_test.go	/^func BenchmarkPaddedBigBytesLargePadding(b *testing.B) {$/;"	f
+BenchmarkPaddedBigBytesSmallOnePadding	common/math/big_test.go	/^func BenchmarkPaddedBigBytesSmallOnePadding(b *testing.B) {$/;"	f
+BenchmarkPaddedBigBytesSmallPadding	common/math/big_test.go	/^func BenchmarkPaddedBigBytesSmallPadding(b *testing.B) {$/;"	f
+BenchmarkPutint	rlp/encode_test.go	/^func BenchmarkPutint(b *testing.B) {$/;"	f
+BenchmarkSha3	crypto/crypto_test.go	/^func BenchmarkSha3(b *testing.B) {$/;"	f
+BenchmarkUnmarshalBig	common/hexutil/json_test.go	/^func BenchmarkUnmarshalBig(b *testing.B) {$/;"	f
+BenchmarkUnmarshalBytes	common/hexutil/json_test.go	/^func BenchmarkUnmarshalBytes(b *testing.B) {$/;"	f
+BenchmarkUnmarshalUint64	common/hexutil/json_test.go	/^func BenchmarkUnmarshalUint64(b *testing.B) {$/;"	f
+BenchmarkVerifySignature	crypto/signature_test.go	/^func BenchmarkVerifySignature(b *testing.B) {$/;"	f
+Big	common/hexutil/json.go	/^type Big big.Int$/;"	t
+Big	common/types.go	/^func (h Hash) Big() *big.Int { return new(big.Int).SetBytes(h[:]) }$/;"	f
+Big	types/bloom9.go	/^func (b Bloom) Big() *big.Int {$/;"	f
+Big0	common/big.go	/^	Big0   = big.NewInt(0)$/;"	v
+Big1	common/big.go	/^	Big1   = big.NewInt(1)$/;"	v
+Big2	common/big.go	/^	Big2   = big.NewInt(2)$/;"	v
+Big256	common/big.go	/^	Big256 = big.NewInt(256)$/;"	v
+Big257	common/big.go	/^	Big257 = big.NewInt(257)$/;"	v
+Big3	common/big.go	/^	Big3   = big.NewInt(3)$/;"	v
+Big32	common/big.go	/^	Big32  = big.NewInt(32)$/;"	v
+BigFromUint64	common/utils.go	/^func BigFromUint64(value uint64) *big.Int {$/;"	f
+BigMax	common/math/big.go	/^func BigMax(x, y *big.Int) *big.Int {$/;"	f
+BigMaxUint64	common/big.go	/^	BigMaxUint64 = new(big.Int).SetUint64(math.MaxUint64)$/;"	v
+BigMin	common/math/big.go	/^func BigMin(x, y *big.Int) *big.Int {$/;"	f
+BigPow	common/math/big.go	/^func BigPow(a, b int64) *big.Int {$/;"	f
+BigToAddress	common/types.go	/^func BigToAddress(b *big.Int) Address { return BytesToAddress(b.Bytes()) }$/;"	f
+BigToHash	common/types.go	/^func BigToHash(b *big.Int) Hash { return BytesToHash(b.Bytes()) }$/;"	f
+BigUint64	common/utils.go	/^func BigUint64(v *big.Int) (uint64, bool) {$/;"	f
+Block	types/block.go	/^type Block struct {$/;"	t
+BlockByHash	ethclient.go	/^func (ec *Client) BlockByHash(ctx context.Context, hash common.Hash) (*types.Block, error) {$/;"	f
+BlockByNumber	ethclient.go	/^func (ec *Client) BlockByNumber(ctx context.Context, number *big.Int) (*types.Block, error) {$/;"	f
+BlockNonce	types/block.go	/^type BlockNonce [8]byte$/;"	t
+BlockNumber	ethclient.go	/^func (ec *Client) BlockNumber(ctx context.Context) (uint64, error) {$/;"	f
+Blocks	types/block.go	/^type Blocks []*Block$/;"	t
+Bloom	types/block.go	/^func (b *Block) Bloom() Bloom             { return b.header.Bloom }$/;"	f
+Bloom	types/bloom9.go	/^type Bloom [BloomByteLength]byte$/;"	t
+Bloom9	types/bloom9.go	/^func Bloom9(data []byte) []byte {$/;"	f
+BloomBitLength	types/bloom9.go	/^	BloomBitLength = 8 * BloomByteLength$/;"	c
+BloomByteLength	types/bloom9.go	/^	BloomByteLength = 256$/;"	c
+BloomLookup	types/bloom9.go	/^func BloomLookup(bin Bloom, topic bytesBacked) bool {$/;"	f
+Body	types/block.go	/^func (b *Block) Body() *Body { return &Body{b.transactions, b.uncles} }$/;"	f
+Body	types/block.go	/^type Body struct {$/;"	t
+Bool	rlp/decode.go	/^func (s *Stream) Bool() (bool, error) {$/;"	f
+Byte	common/math/big.go	/^func Byte(bigint *big.Int, padlength, n int) byte {$/;"	f
+Byte	rlp/decode.go	/^	Byte Kind = iota$/;"	c
+ByteReader	rlp/decode.go	/^type ByteReader interface {$/;"	t
+Bytes	common/hexutil/json.go	/^type Bytes []byte$/;"	t
+Bytes	common/types.go	/^func (a Address) Bytes() []byte { return a[:] }$/;"	f
+Bytes	common/types.go	/^func (h Hash) Bytes() []byte { return h[:] }$/;"	f
+Bytes	rlp/decode.go	/^func (s *Stream) Bytes() ([]byte, error) {$/;"	f
+Bytes	types/bloom9.go	/^func (b Bloom) Bytes() []byte {$/;"	f
+Bytes2Hex	common/bytes.go	/^func Bytes2Hex(d []byte) string {$/;"	f
+BytesToAddress	common/types.go	/^func BytesToAddress(b []byte) Address {$/;"	f
+BytesToBloom	types/bloom9.go	/^func BytesToBloom(b []byte) Bloom {$/;"	f
+BytesToHash	common/types.go	/^func BytesToHash(b []byte) Hash {$/;"	f
+CalcAminoHash	types/transaction_amino.go	/^func CalcAminoHash(tx *Transaction) (hash common.Hash, err error) {$/;"	f
+CalcUncleHash	types/block.go	/^func CalcUncleHash(uncles []*Header) common.Hash {$/;"	f
+CallContract	ethclient.go	/^func (ec *Client) CallContract(ctx context.Context, msg ethereum.CallMsg, blockNumber *big.Int) ([]byte, error) {$/;"	f
+CallContract	gethclient/gethclient.go	/^func (ec *Client) CallContract(ctx context.Context, msg ethereum.CallMsg, blockNumber *big.Int, overrides *map[common.Address]OverrideAccount) ([]byte, error) {$/;"	f
+CallMsg	types/ethereum/interfaces.go	/^type CallMsg struct {$/;"	t
+ChainID	ethclient.go	/^func (ec *Client) ChainID(ctx context.Context) (*big.Int, error) {$/;"	f
+ChainID	signer.go	/^func (s *senderFromServer) ChainID() *big.Int {$/;"	f
+ChainID	types/transaction_signing.go	/^func (s EIP155Signer) ChainID() *big.Int {$/;"	f
+ChainID	types/transaction_signing.go	/^func (s FrontierSigner) ChainID() *big.Int {$/;"	f
+ChainID	types/transaction_signing.go	/^func (s HomesteadSigner) ChainID() *big.Int {$/;"	f
+ChainID	types/transaction_signing.go	/^func (s eip2930Signer) ChainID() *big.Int {$/;"	f
+ChainId	types/transaction.go	/^func (tx *Transaction) ChainId() *big.Int {$/;"	f
+ChainReader	types/ethereum/interfaces.go	/^type ChainReader interface {$/;"	t
+ChainStateReader	types/ethereum/interfaces.go	/^type ChainStateReader interface {$/;"	t
+ChainSyncReader	types/ethereum/interfaces.go	/^type ChainSyncReader interface {$/;"	t
+CheckNonce	types/transaction.go	/^func (m Message) CheckNonce() bool       { return m.checkNonce }$/;"	f
+Client	ethclient.go	/^type Client struct {$/;"	t
+Client	gethclient/gethclient.go	/^type Client struct {$/;"	t
+Close	ethclient.go	/^func (ec *Client) Close() {$/;"	f
+CodeAt	ethclient.go	/^func (ec *Client) CodeAt(ctx context.Context, account common.Address, blockNumber *big.Int) ([]byte, error) {$/;"	f
+Coinbase	types/block.go	/^func (b *Block) Coinbase() common.Address { return b.header.Coinbase }$/;"	f
+CompressPubkey	crypto/signature.go	/^func CompressPubkey(pubkey *ecdsa.PublicKey) []byte {$/;"	f
+ContractCaller	types/ethereum/interfaces.go	/^type ContractCaller interface {$/;"	t
+CopyBytes	common/bytes.go	/^func CopyBytes(b []byte) (copiedBytes []byte) {$/;"	f
+CopyHeader	types/block.go	/^func CopyHeader(h *Header) *Header {$/;"	f
+Cost	types/transaction.go	/^func (tx *Transaction) Cost() *big.Int {$/;"	f
+CountValues	rlp/raw.go	/^func CountValues(b []byte) (int, error) {$/;"	f
+CreateAccessList	gethclient/gethclient.go	/^func (ec *Client) CreateAccessList(ctx context.Context, msg ethereum.CallMsg) (*types.AccessList, uint64, string, error) {$/;"	f
+CreateAddress	crypto/crypto.go	/^func CreateAddress(b common.Address, nonce uint64) common.Address {$/;"	f
+CreateAddress2	crypto/crypto.go	/^func CreateAddress2(b common.Address, salt [32]byte, inithash []byte) common.Address {$/;"	f
+CreateBloom	types/bloom9.go	/^func CreateBloom(receipts Receipts) Bloom {$/;"	f
+Data	types/transaction.go	/^func (m Message) Data() []byte           { return m.data }$/;"	f
+Data	types/transaction.go	/^func (tx *Transaction) Data() []byte { return tx.inner.data() }$/;"	f
+Decimal256	common/math/big.go	/^type Decimal256 big.Int$/;"	t
+Decode	common/hexutil/hexutil.go	/^func Decode(input string) ([]byte, error) {$/;"	f
+Decode	rlp/decode.go	/^func (s *Stream) Decode(val interface{}) error {$/;"	f
+Decode	rlp/decode.go	/^func Decode(r io.Reader, val interface{}) error {$/;"	f
+DecodeBig	common/hexutil/hexutil.go	/^func DecodeBig(input string) (*big.Int, error) {$/;"	f
+DecodeBytes	rlp/decode.go	/^func DecodeBytes(b []byte, val interface{}) error {$/;"	f
+DecodeRLP	rlp/decode_test.go	/^func (bd *byteDecoder) DecodeRLP(s *Stream) error {$/;"	f
+DecodeRLP	rlp/decode_test.go	/^func (f *unencodableDecoder) DecodeRLP(s *Stream) error {$/;"	f
+DecodeRLP	rlp/decode_test.go	/^func (t *testDecoder) DecodeRLP(s *Stream) error {$/;"	f
+DecodeRLP	types/block.go	/^func (b *Block) DecodeRLP(s *rlp.Stream) error {$/;"	f
+DecodeRLP	types/log.go	/^func (l *Log) DecodeRLP(s *rlp.Stream) error {$/;"	f
+DecodeRLP	types/log.go	/^func (l *LogForStorage) DecodeRLP(s *rlp.Stream) error {$/;"	f
+DecodeRLP	types/receipt.go	/^func (r *Receipt) DecodeRLP(s *rlp.Stream) error {$/;"	f
+DecodeRLP	types/receipt.go	/^func (r *ReceiptForStorage) DecodeRLP(s *rlp.Stream) error {$/;"	f
+DecodeRLP	types/transaction.go	/^func (tx *Transaction) DecodeRLP(s *rlp.Stream) error {$/;"	f
+DecodeUint64	common/hexutil/hexutil.go	/^func DecodeUint64(input string) (uint64, error) {$/;"	f
+Decoder	rlp/decode.go	/^type Decoder interface {$/;"	t
+DecompressPubkey	crypto/signature.go	/^func DecompressPubkey(pubkey []byte) (*ecdsa.PublicKey, error) {$/;"	f
+DerivableList	types/hashing.go	/^type DerivableList interface {$/;"	t
+DeriveSha	types/hashing.go	/^func DeriveSha(list DerivableList, hasher TrieHasher) common.Hash {$/;"	f
+Dial	ethclient.go	/^func Dial(rawurl string) (*Client, error) {$/;"	f
+DialContext	ethclient.go	/^func DialContext(ctx context.Context, rawurl string) (*Client, error) {$/;"	f
+Difficulty	types/block.go	/^func (b *Block) Difficulty() *big.Int { return new(big.Int).Set(b.header.Difficulty) }$/;"	f
+DigestLength	crypto/crypto.go	/^const DigestLength = 32$/;"	c
+DynamicFeeTx	types/dynamic_fee_tx.go	/^type DynamicFeeTx struct {$/;"	t
+DynamicFeeTxType	types/transaction.go	/^	DynamicFeeTxType$/;"	c
+EIP155Signer	types/transaction_signing.go	/^type EIP155Signer struct {$/;"	t
+EOL	rlp/decode.go	/^var EOL = errors.New("rlp: end of list")$/;"	v
+Ecrecover	crypto/signature.go	/^func Ecrecover(hash, sig []byte) ([]byte, error) {$/;"	f
+EffectiveGasTip	types/transaction.go	/^func (tx *Transaction) EffectiveGasTip(baseFee *big.Int) (*big.Int, error) {$/;"	f
+EffectiveGasTipCmp	types/transaction.go	/^func (tx *Transaction) EffectiveGasTipCmp(other *Transaction, baseFee *big.Int) int {$/;"	f
+EffectiveGasTipIntCmp	types/transaction.go	/^func (tx *Transaction) EffectiveGasTipIntCmp(other *big.Int, baseFee *big.Int) int {$/;"	f
+EffectiveGasTipValue	types/transaction.go	/^func (tx *Transaction) EffectiveGasTipValue(baseFee *big.Int) *big.Int {$/;"	f
+EmptyBody	types/block.go	/^func (h *Header) EmptyBody() bool {$/;"	f
+EmptyList	rlp/encode.go	/^	EmptyList   = []byte{0xC0}$/;"	v
+EmptyReceipts	types/block.go	/^func (h *Header) EmptyReceipts() bool {$/;"	f
+EmptyRootHash	types/block.go	/^	EmptyRootHash  = common.HexToHash("56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421")$/;"	v
+EmptyString	rlp/encode.go	/^	EmptyString = []byte{0x80}$/;"	v
+EmptyUncleHash	types/block.go	/^	EmptyUncleHash = rlpHash([]*Header(nil))$/;"	v
+Encode	common/hexutil/hexutil.go	/^func Encode(b []byte) string {$/;"	f
+Encode	rlp/encode.go	/^func Encode(w io.Writer, val interface{}) error {$/;"	f
+EncodeBig	common/hexutil/hexutil.go	/^func EncodeBig(bigint *big.Int) string {$/;"	f
+EncodeIndex	types/hashing_test.go	/^func (d *dummyDerivableList) EncodeIndex(i int, w *bytes.Buffer) {$/;"	f
+EncodeIndex	types/hashing_test.go	/^func (f flatList) EncodeIndex(i int, w *bytes.Buffer) {$/;"	f
+EncodeIndex	types/receipt.go	/^func (rs Receipts) EncodeIndex(i int, w *bytes.Buffer) {$/;"	f
+EncodeIndex	types/transaction.go	/^func (s Transactions) EncodeIndex(i int, w *bytes.Buffer) {$/;"	f
+EncodeNonce	types/block.go	/^func EncodeNonce(i uint64) BlockNonce {$/;"	f
+EncodeRLP	rlp/encode_test.go	/^func (e *testEncoder) EncodeRLP(w io.Writer) error {$/;"	f
+EncodeRLP	rlp/encode_test.go	/^func (e byteEncoder) EncodeRLP(w io.Writer) error {$/;"	f
+EncodeRLP	rlp/encode_test.go	/^func (e testEncoderValueMethod) EncodeRLP(w io.Writer) error {$/;"	f
+EncodeRLP	rlp/encode_test.go	/^func (f undecodableEncoder) EncodeRLP(w io.Writer) error {$/;"	f
+EncodeRLP	rlp/encoder_example_test.go	/^func (x *MyCoolType) EncodeRLP(w io.Writer) (err error) {$/;"	f
+EncodeRLP	types/block.go	/^func (b *Block) EncodeRLP(w io.Writer) error {$/;"	f
+EncodeRLP	types/log.go	/^func (l *Log) EncodeRLP(w io.Writer) error {$/;"	f
+EncodeRLP	types/log.go	/^func (l *LogForStorage) EncodeRLP(w io.Writer) error {$/;"	f
+EncodeRLP	types/receipt.go	/^func (r *Receipt) EncodeRLP(w io.Writer) error {$/;"	f
+EncodeRLP	types/receipt.go	/^func (r *ReceiptForStorage) EncodeRLP(w io.Writer) error {$/;"	f
+EncodeRLP	types/transaction.go	/^func (tx *Transaction) EncodeRLP(w io.Writer) error {$/;"	f
+EncodeToBytes	rlp/encode.go	/^func EncodeToBytes(val interface{}) ([]byte, error) {$/;"	f
+EncodeToReader	rlp/encode.go	/^func EncodeToReader(val interface{}) (size int, r io.Reader, err error) {$/;"	f
+EncodeUint64	common/hexutil/hexutil.go	/^func EncodeUint64(i uint64) string {$/;"	f
+Encoder	rlp/encode.go	/^type Encoder interface {$/;"	t
+Equal	signer.go	/^func (s *senderFromServer) Equal(other types.Signer) bool {$/;"	f
+Equal	types/transaction_signing.go	/^func (s EIP155Signer) Equal(s2 Signer) bool {$/;"	f
+Equal	types/transaction_signing.go	/^func (s FrontierSigner) Equal(s2 Signer) bool {$/;"	f
+Equal	types/transaction_signing.go	/^func (s HomesteadSigner) Equal(s2 Signer) bool {$/;"	f
+Equal	types/transaction_signing.go	/^func (s eip2930Signer) Equal(s2 Signer) bool {$/;"	f
+Equal	types/transaction_signing.go	/^func (s londonSigner) Equal(s2 Signer) bool {$/;"	f
+Err	rlp/iterator.go	/^func (it *listIterator) Err() error {$/;"	f
+ErrBig256Range	common/hexutil/hexutil.go	/^	ErrBig256Range   = &decError{"hex number > 256 bits"}$/;"	v
+ErrCanonInt	rlp/decode.go	/^	ErrCanonInt         = errors.New("rlp: non-canonical integer format")$/;"	v
+ErrCanonSize	rlp/decode.go	/^	ErrCanonSize        = errors.New("rlp: non-canonical size information")$/;"	v
+ErrElemTooLarge	rlp/decode.go	/^	ErrElemTooLarge     = errors.New("rlp: element is larger than containing list")$/;"	v
+ErrEmptyNumber	common/hexutil/hexutil.go	/^	ErrEmptyNumber   = &decError{"hex string \\"0x\\""}$/;"	v
+ErrEmptyString	common/hexutil/hexutil.go	/^	ErrEmptyString   = &decError{"empty hex string"}$/;"	v
+ErrExpectedList	rlp/decode.go	/^	ErrExpectedList     = errors.New("rlp: expected List")$/;"	v
+ErrExpectedString	rlp/decode.go	/^	ErrExpectedString   = errors.New("rlp: expected String or Byte")$/;"	v
+ErrGasFeeCapTooLow	types/transaction.go	/^	ErrGasFeeCapTooLow      = errors.New("fee cap less than base fee")$/;"	v
+ErrInvalidChainId	types/transaction_signing.go	/^var ErrInvalidChainId = errors.New("invalid chain id for signer")$/;"	v
+ErrInvalidSig	types/transaction.go	/^	ErrInvalidSig           = errors.New("invalid transaction v, r, s values")$/;"	v
+ErrInvalidTxType	types/transaction.go	/^	ErrInvalidTxType        = errors.New("transaction type not valid in this context")$/;"	v
+ErrLeadingZero	common/hexutil/hexutil.go	/^	ErrLeadingZero   = &decError{"hex number with leading zero digits"}$/;"	v
+ErrMissingPrefix	common/hexutil/hexutil.go	/^	ErrMissingPrefix = &decError{"hex string without 0x prefix"}$/;"	v
+ErrMoreThanOneValue	rlp/decode.go	/^	ErrMoreThanOneValue = errors.New("rlp: input contains more than one value")$/;"	v
+ErrOddLength	common/hexutil/hexutil.go	/^	ErrOddLength     = &decError{"hex string of odd length"}$/;"	v
+ErrSyntax	common/hexutil/hexutil.go	/^	ErrSyntax        = &decError{"invalid hex string"}$/;"	v
+ErrTxIsNotAminoCodec	types/transaction_amino.go	/^	ErrTxIsNotAminoCodec = errors.New("transaction is not amino codec")$/;"	v
+ErrTxTypeNotSupported	types/transaction.go	/^	ErrTxTypeNotSupported   = errors.New("transaction type not supported")$/;"	v
+ErrUint64Range	common/hexutil/hexutil.go	/^	ErrUint64Range   = &decError{"hex number > 64 bits"}$/;"	v
+ErrUintRange	common/hexutil/hexutil.go	/^	ErrUintRange     = &decError{fmt.Sprintf("hex number > %d bits", uintBits)}$/;"	v
+ErrUnexpectedProtection	types/transaction.go	/^	ErrUnexpectedProtection = errors.New("transaction type does not supported EIP-155 protected signatures")$/;"	v
+ErrValueTooLarge	rlp/decode.go	/^	ErrValueTooLarge    = errors.New("rlp: value size exceeds available input length")$/;"	v
+Error	common/hexutil/hexutil.go	/^func (err decError) Error() string { return err.msg }$/;"	f
+Error	rlp/decode.go	/^func (err *decodeError) Error() string {$/;"	f
+Error	rlp/typecache.go	/^func (e structFieldError) Error() string {$/;"	f
+Error	rlp/typecache.go	/^func (e structTagError) Error() string {$/;"	f
+EstimateGas	ethclient.go	/^func (ec *Client) EstimateGas(ctx context.Context, msg ethereum.CallMsg) (uint64, error) {$/;"	f
+ExampleDecode	rlp/decode_test.go	/^func ExampleDecode() {$/;"	f
+ExampleDecode_structTagNil	rlp/decode_test.go	/^func ExampleDecode_structTagNil() {$/;"	f
+ExampleDecode_structTagTail	rlp/decode_tail_test.go	/^func ExampleDecode_structTagTail() {$/;"	f
+ExampleEncoder	rlp/encoder_example_test.go	/^func ExampleEncoder() {$/;"	f
+ExampleStream	rlp/decode_test.go	/^func ExampleStream() {$/;"	f
+ExampleUnmarshalFixedText	common/hexutil/json_example_test.go	/^func ExampleUnmarshalFixedText() {$/;"	f
+Exp	common/math/big.go	/^func Exp(base, exponent *big.Int) *big.Int {$/;"	f
+Extra	types/block.go	/^func (b *Block) Extra() []byte            { return common.CopyBytes(b.header.Extra) }$/;"	f
+FilterLogs	ethclient.go	/^func (ec *Client) FilterLogs(ctx context.Context, q ethereum.FilterQuery) ([]types.Log, error) {$/;"	f
+FilterQuery	types/ethereum/interfaces.go	/^type FilterQuery struct {$/;"	t
+FirstBitSet	common/math/big.go	/^func FirstBitSet(v *big.Int) int {$/;"	f
+Format	common/types.go	/^func (a Address) Format(s fmt.State, c rune) {$/;"	f
+Format	common/types.go	/^func (h Hash) Format(s fmt.State, c rune) {$/;"	f
+From	types/transaction.go	/^func (m Message) From() common.Address   { return m.from }$/;"	f
+FromECDSA	crypto/crypto.go	/^func FromECDSA(priv *ecdsa.PrivateKey) []byte {$/;"	f
+FromECDSAPub	crypto/crypto.go	/^func FromECDSAPub(pub *ecdsa.PublicKey) []byte {$/;"	f
+FromHex	common/bytes.go	/^func FromHex(s string) []byte {$/;"	f
+FrontierSigner	types/transaction_signing.go	/^type FrontierSigner struct{}$/;"	t
+GCStats	gethclient/gethclient.go	/^func (ec *Client) GCStats(ctx context.Context) (*debug.GCStats, error) {$/;"	f
+Gas	types/transaction.go	/^func (m Message) Gas() uint64            { return m.gasLimit }$/;"	f
+Gas	types/transaction.go	/^func (tx *Transaction) Gas() uint64 { return tx.inner.gas() }$/;"	f
+GasEstimator	types/ethereum/interfaces.go	/^type GasEstimator interface {$/;"	t
+GasFeeCap	types/transaction.go	/^func (m Message) GasFeeCap() *big.Int    { return m.gasFeeCap }$/;"	f
+GasFeeCap	types/transaction.go	/^func (tx *Transaction) GasFeeCap() *big.Int { return new(big.Int).Set(tx.inner.gasFeeCap()) }$/;"	f
+GasFeeCapCmp	types/transaction.go	/^func (tx *Transaction) GasFeeCapCmp(other *Transaction) int {$/;"	f
+GasFeeCapIntCmp	types/transaction.go	/^func (tx *Transaction) GasFeeCapIntCmp(other *big.Int) int {$/;"	f
+GasLimit	types/block.go	/^func (b *Block) GasLimit() uint64     { return b.header.GasLimit }$/;"	f
+GasPrice	types/transaction.go	/^func (m Message) GasPrice() *big.Int     { return m.gasPrice }$/;"	f
+GasPrice	types/transaction.go	/^func (tx *Transaction) GasPrice() *big.Int { return new(big.Int).Set(tx.inner.gasPrice()) }$/;"	f
+GasPricer	types/ethereum/interfaces.go	/^type GasPricer interface {$/;"	t
+GasTipCap	types/transaction.go	/^func (m Message) GasTipCap() *big.Int    { return m.gasTipCap }$/;"	f
+GasTipCap	types/transaction.go	/^func (tx *Transaction) GasTipCap() *big.Int { return new(big.Int).Set(tx.inner.gasTipCap()) }$/;"	f
+GasTipCapCmp	types/transaction.go	/^func (tx *Transaction) GasTipCapCmp(other *Transaction) int {$/;"	f
+GasTipCapIntCmp	types/transaction.go	/^func (tx *Transaction) GasTipCapIntCmp(other *big.Int) int {$/;"	f
+GasUsed	types/block.go	/^func (b *Block) GasUsed() uint64      { return b.header.GasUsed }$/;"	f
+Generate	common/types.go	/^func (h Hash) Generate(rand *rand.Rand, size int) reflect.Value {$/;"	f
+GenerateKey	crypto/crypto.go	/^func GenerateKey() (*ecdsa.PrivateKey, error) {$/;"	f
+GetBigInt	common/utils.go	/^func GetBigInt(data []byte, start, size uint64) *big.Int {$/;"	f
+GetBigIntFromStr	common/utils.go	/^func GetBigIntFromStr(str string) (*big.Int, error) {$/;"	f
+GetData	common/utils.go	/^func GetData(data []byte, start, size uint64) []byte {$/;"	f
+GetIntFromStr	common/utils.go	/^func GetIntFromStr(str string) (int, error) {$/;"	f
+GetNodeInfo	gethclient/gethclient.go	/^func (ec *Client) GetNodeInfo(ctx context.Context) (*types.NodeInfo, error) {$/;"	f
+GetProof	gethclient/gethclient.go	/^func (ec *Client) GetProof(ctx context.Context, account common.Address, keys []string, blockNumber *big.Int) (*AccountResult, error) {$/;"	f
+GetUint64	common/utils.go	/^func GetUint64(data []byte, start, size uint64) (uint64, bool) {$/;"	f
+GetUint64FromStr	common/utils.go	/^func GetUint64FromStr(str string) (uint64, error) {$/;"	f
+Hash	common/types.go	/^func (a Address) Hash() Hash { return BytesToHash(a[:]) }$/;"	f
+Hash	common/types.go	/^type Hash [HashLength]byte$/;"	t
+Hash	signer.go	/^func (s *senderFromServer) Hash(tx *types.Transaction) common.Hash {$/;"	f
+Hash	types/block.go	/^func (b *Block) Hash() common.Hash {$/;"	f
+Hash	types/block.go	/^func (h *Header) Hash() common.Hash {$/;"	f
+Hash	types/block_test.go	/^func (h *testHasher) Hash() common.Hash {$/;"	f
+Hash	types/hashing_test.go	/^func (d *hashToHumanReadable) Hash() common.Hash {$/;"	f
+Hash	types/transaction.go	/^func (tx *Transaction) Hash() common.Hash {$/;"	f
+Hash	types/transaction_signing.go	/^func (fs FrontierSigner) Hash(tx *Transaction) common.Hash {$/;"	f
+Hash	types/transaction_signing.go	/^func (s EIP155Signer) Hash(tx *Transaction) common.Hash {$/;"	f
+Hash	types/transaction_signing.go	/^func (s eip2930Signer) Hash(tx *Transaction) common.Hash {$/;"	f
+Hash	types/transaction_signing.go	/^func (s londonSigner) Hash(tx *Transaction) common.Hash {$/;"	f
+HashData	crypto/crypto.go	/^func HashData(kh KeccakState, data []byte) (h common.Hash) {$/;"	f
+HashLength	common/types.go	/^	HashLength = 32$/;"	c
+Header	types/block.go	/^func (b *Block) Header() *Header { return CopyHeader(b.header) }$/;"	f
+Header	types/block.go	/^type Header struct {$/;"	t
+HeaderByHash	ethclient.go	/^func (ec *Client) HeaderByHash(ctx context.Context, hash common.Hash) (*types.Header, error) {$/;"	f
+HeaderByNumber	ethclient.go	/^func (ec *Client) HeaderByNumber(ctx context.Context, number *big.Int) (*types.Header, error) {$/;"	f
+Hex	common/types.go	/^func (a Address) Hex() string {$/;"	f
+Hex	common/types.go	/^func (h Hash) Hex() string { return hexutil.Encode(h[:]) }$/;"	f
+Hex2Bytes	common/bytes.go	/^func Hex2Bytes(str string) []byte {$/;"	f
+Hex2BytesFixed	common/bytes.go	/^func Hex2BytesFixed(str string, flen int) []byte {$/;"	f
+HexOrDecimal256	common/math/big.go	/^type HexOrDecimal256 big.Int$/;"	t
+HexOrDecimal64	common/math/integer.go	/^type HexOrDecimal64 uint64$/;"	t
+HexToAddress	common/types.go	/^func HexToAddress(s string) Address { return BytesToAddress(FromHex(s)) }$/;"	f
+HexToECDSA	crypto/crypto.go	/^func HexToECDSA(hexkey string) (*ecdsa.PrivateKey, error) {$/;"	f
+HexToHash	common/types.go	/^func HexToHash(s string) Hash { return BytesToHash(FromHex(s)) }$/;"	f
+HomesteadSigner	types/transaction_signing.go	/^type HomesteadSigner struct{ FrontierSigner }$/;"	t
+ImplementsGraphQLType	common/hexutil/json.go	/^func (b Big) ImplementsGraphQLType(name string) bool { return name == "BigInt" }$/;"	f
+ImplementsGraphQLType	common/hexutil/json.go	/^func (b Bytes) ImplementsGraphQLType(name string) bool { return name == "Bytes" }$/;"	f
+ImplementsGraphQLType	common/hexutil/json.go	/^func (b Uint64) ImplementsGraphQLType(name string) bool { return name == "Long" }$/;"	f
+ImplementsGraphQLType	common/types.go	/^func (Hash) ImplementsGraphQLType(name string) bool { return name == "Bytes32" }$/;"	f
+ImplementsGraphQLType	common/types.go	/^func (a Address) ImplementsGraphQLType(name string) bool { return name == "Address" }$/;"	f
+IntSize	rlp/raw.go	/^func IntSize(x uint64) int {$/;"	f
+IsAminoCodec	types/transaction_amino.go	/^func (tx *Transaction) IsAminoCodec() bool {$/;"	f
+IsEqualIgnoreCase	common/utils.go	/^func IsEqualIgnoreCase(s1, s2 string) bool {$/;"	f
+IsHexAddress	common/types.go	/^func IsHexAddress(s string) bool {$/;"	f
+Keccak256	crypto/crypto.go	/^func Keccak256(data ...[]byte) []byte {$/;"	f
+Keccak256Hash	common/utils.go	/^func Keccak256Hash(data ...[]byte) (h Hash) {$/;"	f
+Keccak256Hash	crypto/crypto.go	/^func Keccak256Hash(data ...[]byte) (h common.Hash) {$/;"	f
+Keccak512	crypto/crypto.go	/^func Keccak512(data ...[]byte) []byte {$/;"	f
+KeccakState	crypto/crypto.go	/^type KeccakState interface {$/;"	t
+Kind	rlp/decode.go	/^func (s *Stream) Kind() (kind Kind, size uint64, err error) {$/;"	f
+Kind	rlp/decode.go	/^type Kind int8$/;"	t
+LatestSignerForChainID	types/transaction_signing.go	/^func LatestSignerForChainID(chainID *big.Int) Signer {$/;"	f
+LeftPadBytes	common/bytes.go	/^func LeftPadBytes(slice []byte, l int) []byte {$/;"	f
+LegacyTx	types/legacy_tx.go	/^type LegacyTx struct {$/;"	t
+LegacyTxType	types/transaction.go	/^	LegacyTxType = iota$/;"	c
+Len	types/hashing_test.go	/^func (d *dummyDerivableList) Len() int {$/;"	f
+Len	types/hashing_test.go	/^func (f flatList) Len() int {$/;"	f
+Len	types/receipt.go	/^func (rs Receipts) Len() int { return len(rs) }$/;"	f
+Len	types/transaction.go	/^func (s Transactions) Len() int { return len(s) }$/;"	f
+Len	types/transaction.go	/^func (s TxByNonce) Len() int           { return len(s) }$/;"	f
+Len	types/transaction.go	/^func (s TxByPriceAndTime) Len() int { return len(s) }$/;"	f
+Less	types/transaction.go	/^func (s TxByNonce) Less(i, j int) bool { return s[i].Nonce() < s[j].Nonce() }$/;"	f
+Less	types/transaction.go	/^func (s TxByPriceAndTime) Less(i, j int) bool {$/;"	f
+List	rlp/decode.go	/^	List$/;"	c
+List	rlp/decode.go	/^func (s *Stream) List() (size uint64, err error) {$/;"	f
+ListEnd	rlp/decode.go	/^func (s *Stream) ListEnd() error {$/;"	f
+ListSize	rlp/raw.go	/^func ListSize(contentSize uint64) uint64 {$/;"	f
+LoadECDSA	crypto/crypto.go	/^func LoadECDSA(file string) (*ecdsa.PrivateKey, error) {$/;"	f
+Log	types/log.go	/^type Log struct {$/;"	t
+LogFilterer	types/ethereum/interfaces.go	/^type LogFilterer interface {$/;"	t
+LogForStorage	types/log.go	/^type LogForStorage Log$/;"	t
+LogsBloom	types/bloom9.go	/^func LogsBloom(logs []*Log) []byte {$/;"	f
+MakeSigner	types/transaction_signing.go	/^func MakeSigner(signType string, chainID *big.Int) Signer {$/;"	f
+MarshalAmino	types/transaction_amino.go	/^func (td LegacyTx) MarshalAmino() ([]byte, error) {$/;"	f
+MarshalBigInt	common/big.go	/^func MarshalBigInt(i *big.Int) (string, error) {$/;"	f
+MarshalBinary	types/transaction.go	/^func (tx *Transaction) MarshalBinary() ([]byte, error) {$/;"	f
+MarshalJSON	common/types.go	/^func (ma *MixedcaseAddress) MarshalJSON() ([]byte, error) {$/;"	f
+MarshalJSON	types/gen_access_tuple.go	/^func (a AccessTuple) MarshalJSON() ([]byte, error) {$/;"	f
+MarshalJSON	types/gen_header_json.go	/^func (h Header) MarshalJSON() ([]byte, error) {$/;"	f
+MarshalJSON	types/gen_log_json.go	/^func (l Log) MarshalJSON() ([]byte, error) {$/;"	f
+MarshalJSON	types/gen_receipt_json.go	/^func (r Receipt) MarshalJSON() ([]byte, error) {$/;"	f
+MarshalJSON	types/transaction_marshalling.go	/^func (t *Transaction) MarshalJSON() ([]byte, error) {$/;"	f
+MarshalText	common/hexutil/json.go	/^func (b Big) MarshalText() ([]byte, error) {$/;"	f
+MarshalText	common/hexutil/json.go	/^func (b Bytes) MarshalText() ([]byte, error) {$/;"	f
+MarshalText	common/hexutil/json.go	/^func (b Uint) MarshalText() ([]byte, error) {$/;"	f
+MarshalText	common/hexutil/json.go	/^func (b Uint64) MarshalText() ([]byte, error) {$/;"	f
+MarshalText	common/math/big.go	/^func (i *Decimal256) MarshalText() ([]byte, error) {$/;"	f
+MarshalText	common/math/big.go	/^func (i *HexOrDecimal256) MarshalText() ([]byte, error) {$/;"	f
+MarshalText	common/math/integer.go	/^func (i HexOrDecimal64) MarshalText() ([]byte, error) {$/;"	f
+MarshalText	common/types.go	/^func (a Address) MarshalText() ([]byte, error) {$/;"	f
+MarshalText	common/types.go	/^func (a UnprefixedAddress) MarshalText() ([]byte, error) {$/;"	f
+MarshalText	common/types.go	/^func (h Hash) MarshalText() ([]byte, error) {$/;"	f
+MarshalText	common/types.go	/^func (h UnprefixedHash) MarshalText() ([]byte, error) {$/;"	f
+MarshalText	types/block.go	/^func (n BlockNonce) MarshalText() ([]byte, error) {$/;"	f
+MarshalText	types/bloom9.go	/^func (b Bloom) MarshalText() ([]byte, error) {$/;"	f
+MaxBig256	common/math/big.go	/^	MaxBig256 = new(big.Int).Set(tt256m1)$/;"	v
+MaxBig63	common/math/big.go	/^	MaxBig63  = new(big.Int).Sub(tt63, big.NewInt(1))$/;"	v
+MaxInt16	common/math/integer.go	/^	MaxInt16  = 1<<15 - 1$/;"	c
+MaxInt32	common/math/integer.go	/^	MaxInt32  = 1<<31 - 1$/;"	c
+MaxInt64	common/math/integer.go	/^	MaxInt64  = 1<<63 - 1$/;"	c
+MaxInt8	common/math/integer.go	/^	MaxInt8   = 1<<7 - 1$/;"	c
+MaxUint16	common/math/integer.go	/^	MaxUint16 = 1<<16 - 1$/;"	c
+MaxUint32	common/math/integer.go	/^	MaxUint32 = 1<<32 - 1$/;"	c
+MaxUint64	common/math/integer.go	/^	MaxUint64 = 1<<64 - 1$/;"	c
+MaxUint64	common/utils.go	/^func MaxUint64(x, y uint64) uint64 {$/;"	f
+MaxUint8	common/math/integer.go	/^	MaxUint8  = 1<<8 - 1$/;"	c
+MemStats	gethclient/gethclient.go	/^func (ec *Client) MemStats(ctx context.Context) (*runtime.MemStats, error) {$/;"	f
+Message	types/transaction.go	/^type Message struct {$/;"	t
+MinInt16	common/math/integer.go	/^	MinInt16  = -1 << 15$/;"	c
+MinInt32	common/math/integer.go	/^	MinInt32  = -1 << 31$/;"	c
+MinInt64	common/math/integer.go	/^	MinInt64  = -1 << 63$/;"	c
+MinInt8	common/math/integer.go	/^	MinInt8   = -1 << 7$/;"	c
+MinUint64	common/utils.go	/^func MinUint64(x, y uint64) uint64 {$/;"	f
+MixDigest	types/block.go	/^func (b *Block) MixDigest() common.Hash   { return b.header.MixDigest }$/;"	f
+MixedcaseAddress	common/types.go	/^type MixedcaseAddress struct {$/;"	t
+MsgEthereumTx	types/transaction_amino.go	/^type MsgEthereumTx struct {$/;"	t
+MustDecode	common/hexutil/hexutil.go	/^func MustDecode(input string) []byte {$/;"	f
+MustDecodeBig	common/hexutil/hexutil.go	/^func MustDecodeBig(input string) *big.Int {$/;"	f
+MustDecodeUint64	common/hexutil/hexutil.go	/^func MustDecodeUint64(input string) uint64 {$/;"	f
+MustMarshalBigInt	common/big.go	/^func MustMarshalBigInt(i *big.Int) string {$/;"	f
+MustParseBig256	common/math/big.go	/^func MustParseBig256(s string) *big.Int {$/;"	f
+MustParseInt	common/math/integer.go	/^func MustParseInt(s string) int {$/;"	f
+MustParseUint64	common/math/integer.go	/^func MustParseUint64(s string) uint64 {$/;"	f
+MustSignNewTx	types/transaction_signing.go	/^func MustSignNewTx(prv *ecdsa.PrivateKey, s Signer, txdata TxData) *Transaction {$/;"	f
+MustUnmarshalBigInt	common/big.go	/^func MustUnmarshalBigInt(s string) *big.Int {$/;"	f
+MyCoolType	rlp/encoder_example_test.go	/^type MyCoolType struct {$/;"	t
+MyType	common/hexutil/json_example_test.go	/^type MyType [5]byte$/;"	t
+NetworkID	ethclient.go	/^func (ec *Client) NetworkID(ctx context.Context) (*big.Int, error) {$/;"	f
+New	gethclient/gethclient.go	/^func New(c *rpc.Client) *Client {$/;"	f
+NewBlock	types/block.go	/^func NewBlock(header *Header, txs []*Transaction, uncles []*Header, receipts []*Receipt, hasher TrieHasher) *Block {$/;"	f
+NewBlockWithHeader	types/block.go	/^func NewBlockWithHeader(header *Header) *Block {$/;"	f
+NewClient	ethclient.go	/^func NewClient(c *rpc.Client) *Client {$/;"	f
+NewContractCreation	types/legacy_tx.go	/^func NewContractCreation(nonce uint64, amount *big.Int, gasLimit uint64, gasPrice *big.Int, data []byte) *Transaction {$/;"	f
+NewDecimal256	common/math/big.go	/^func NewDecimal256(x int64) *Decimal256 {$/;"	f
+NewEIP155Signer	types/transaction_signing.go	/^func NewEIP155Signer(chainId *big.Int) EIP155Signer {$/;"	f
+NewEIP2930Signer	types/transaction_signing.go	/^func NewEIP2930Signer(chainId *big.Int) Signer {$/;"	f
+NewHexOrDecimal256	common/math/big.go	/^func NewHexOrDecimal256(x int64) *HexOrDecimal256 {$/;"	f
+NewKeccakState	crypto/crypto.go	/^func NewKeccakState() KeccakState {$/;"	f
+NewListIterator	rlp/iterator.go	/^func NewListIterator(data RawValue) (*listIterator, error) {$/;"	f
+NewListStream	rlp/decode.go	/^func NewListStream(r io.Reader, len uint64) *Stream {$/;"	f
+NewLondonSigner	types/transaction_signing.go	/^func NewLondonSigner(chainId *big.Int) Signer {$/;"	f
+NewMessage	types/transaction.go	/^func NewMessage(from common.Address, to *common.Address, nonce uint64, amount *big.Int, gasLimit uint64, gasPrice, gasFeeCap, gasTipCap *big.Int, data []byte, accessList AccessList, checkNonce bool) Message {$/;"	f
+NewMixedcaseAddress	common/types.go	/^func NewMixedcaseAddress(addr Address) MixedcaseAddress {$/;"	f
+NewMixedcaseAddressFromString	common/types.go	/^func NewMixedcaseAddressFromString(hexaddr string) (*MixedcaseAddress, error) {$/;"	f
+NewReceipt	types/receipt.go	/^func NewReceipt(root []byte, failed bool, cumulativeGasUsed uint64) *Receipt {$/;"	f
+NewStream	rlp/decode.go	/^func NewStream(r io.Reader, inputLimit uint64) *Stream {$/;"	f
+NewTransaction	types/legacy_tx.go	/^func NewTransaction(nonce uint64, to common.Address, amount *big.Int, gasLimit uint64, gasPrice *big.Int, data []byte) *Transaction {$/;"	f
+NewTransactionsByPriceAndNonce	types/transaction.go	/^func NewTransactionsByPriceAndNonce(signer Signer, txs map[common.Address]Transactions, baseFee *big.Int) *TransactionsByPriceAndNonce {$/;"	f
+NewTx	types/transaction.go	/^func NewTx(inner TxData) *Transaction {$/;"	f
+NewTxWithMinerFee	types/transaction.go	/^func NewTxWithMinerFee(tx *Transaction, baseFee *big.Int) (*TxWithMinerFee, error) {$/;"	f
+Next	rlp/iterator.go	/^func (it *listIterator) Next() bool {$/;"	f
+NodeInfo	types/nodeinfo.go	/^type NodeInfo struct {$/;"	t
+Nonce	types/block.go	/^func (b *Block) Nonce() uint64            { return binary.BigEndian.Uint64(b.header.Nonce[:]) }$/;"	f
+Nonce	types/transaction.go	/^func (m Message) Nonce() uint64          { return m.nonce }$/;"	f
+Nonce	types/transaction.go	/^func (tx *Transaction) Nonce() uint64 { return tx.inner.nonce() }$/;"	f
+NonceAt	ethclient.go	/^func (ec *Client) NonceAt(ctx context.Context, account common.Address, blockNumber *big.Int) (uint64, error) {$/;"	f
+NotFound	types/ethereum/interfaces.go	/^var NotFound = errors.New("not found")$/;"	v
+Now	common/utils.go	/^func Now() int64 {$/;"	f
+NowMilli	common/utils.go	/^func NowMilli() int64 {$/;"	f
+NowMilliStr	common/utils.go	/^func NowMilliStr() string {$/;"	f
+NowStr	common/utils.go	/^func NowStr() string {$/;"	f
+Number	types/block.go	/^func (b *Block) Number() *big.Int     { return new(big.Int).Set(b.header.Number) }$/;"	f
+NumberU64	types/block.go	/^func (b *Block) NumberU64() uint64        { return b.header.Number.Uint64() }$/;"	f
+Original	common/types.go	/^func (ma *MixedcaseAddress) Original() string {$/;"	f
+OverrideAccount	gethclient/gethclient.go	/^type OverrideAccount struct {$/;"	t
+PaddedBigBytes	common/math/big.go	/^func PaddedBigBytes(bigint *big.Int, n int) []byte {$/;"	f
+ParentHash	types/block.go	/^func (b *Block) ParentHash() common.Hash  { return b.header.ParentHash }$/;"	f
+ParseBig256	common/math/big.go	/^func ParseBig256(s string) (*big.Int, bool) {$/;"	f
+ParseInt	common/math/integer.go	/^func ParseInt(s string) (int, error) {$/;"	f
+ParseUint64	common/math/integer.go	/^func ParseUint64(s string) (uint64, bool) {$/;"	f
+Peek	types/transaction.go	/^func (t *TransactionsByPriceAndNonce) Peek() *Transaction {$/;"	f
+PendingBalanceAt	ethclient.go	/^func (ec *Client) PendingBalanceAt(ctx context.Context, account common.Address) (*big.Int, error) {$/;"	f
+PendingCallContract	ethclient.go	/^func (ec *Client) PendingCallContract(ctx context.Context, msg ethereum.CallMsg) ([]byte, error) {$/;"	f
+PendingCodeAt	ethclient.go	/^func (ec *Client) PendingCodeAt(ctx context.Context, account common.Address) ([]byte, error) {$/;"	f
+PendingContractCaller	types/ethereum/interfaces.go	/^type PendingContractCaller interface {$/;"	t
+PendingNonceAt	ethclient.go	/^func (ec *Client) PendingNonceAt(ctx context.Context, account common.Address) (uint64, error) {$/;"	f
+PendingStateEventer	types/ethereum/interfaces.go	/^type PendingStateEventer interface {$/;"	t
+PendingStateReader	types/ethereum/interfaces.go	/^type PendingStateReader interface {$/;"	t
+PendingStorageAt	ethclient.go	/^func (ec *Client) PendingStorageAt(ctx context.Context, account common.Address, key common.Hash) ([]byte, error) {$/;"	f
+PendingTransactionCount	ethclient.go	/^func (ec *Client) PendingTransactionCount(ctx context.Context) (uint, error) {$/;"	f
+Pop	types/transaction.go	/^func (s *TxByPriceAndTime) Pop() interface{} {$/;"	f
+Pop	types/transaction.go	/^func (t *TransactionsByPriceAndNonce) Pop() {$/;"	f
+Protected	types/transaction.go	/^func (tx *Transaction) Protected() bool {$/;"	f
+PubkeyToAddress	crypto/crypto.go	/^func PubkeyToAddress(p ecdsa.PublicKey) common.Address {$/;"	f
+Push	types/transaction.go	/^func (s *TxByPriceAndTime) Push(x interface{}) {$/;"	f
+Raw	rlp/decode.go	/^func (s *Stream) Raw() ([]byte, error) {$/;"	f
+RawSignatureValues	types/transaction.go	/^func (tx *Transaction) RawSignatureValues() (v, r, s *big.Int) {$/;"	f
+RawValue	rlp/raw.go	/^type RawValue []byte$/;"	t
+Read	rlp/decode_test.go	/^func (r *plainReader) Read(buf []byte) (n int, err error) {$/;"	f
+Read	rlp/encode.go	/^func (r *encReader) Read(b []byte) (n int, err error) {$/;"	f
+Read	rlp/encode_test.go	/^func (e *encodableReader) Read(b []byte) (int, error) {$/;"	f
+ReadBits	common/math/big.go	/^func ReadBits(bigint *big.Int, buf []byte) {$/;"	f
+Receipt	types/receipt.go	/^type Receipt struct {$/;"	t
+ReceiptForStorage	types/receipt.go	/^type ReceiptForStorage Receipt$/;"	t
+ReceiptHash	types/block.go	/^func (b *Block) ReceiptHash() common.Hash { return b.header.ReceiptHash }$/;"	f
+ReceiptStatusFailed	types/receipt.go	/^	ReceiptStatusFailed = uint64(0)$/;"	c
+ReceiptStatusSuccessful	types/receipt.go	/^	ReceiptStatusSuccessful = uint64(1)$/;"	c
+Receipts	types/receipt.go	/^type Receipts []*Receipt$/;"	t
+RecoveryIDOffset	crypto/crypto.go	/^const RecoveryIDOffset = 64$/;"	c
+Reset	rlp/decode.go	/^func (s *Stream) Reset(r io.Reader, inputLimit uint64) {$/;"	f
+Reset	types/block_test.go	/^func (h *testHasher) Reset() {$/;"	f
+Reset	types/hashing_test.go	/^func (d *hashToHumanReadable) Reset() {$/;"	f
+RightPadBytes	common/bytes.go	/^func RightPadBytes(slice []byte, l int) []byte {$/;"	f
+Root	types/block.go	/^func (b *Block) Root() common.Hash        { return b.header.Root }$/;"	f
+S256	common/math/big.go	/^func S256(x *big.Int) *big.Int {$/;"	f
+S256	crypto/signature.go	/^func S256() elliptic.Curve {$/;"	f
+SafeAdd	common/math/integer.go	/^func SafeAdd(x, y uint64) (uint64, bool) {$/;"	f
+SafeMul	common/math/integer.go	/^func SafeMul(x, y uint64) (uint64, bool) {$/;"	f
+SafeSub	common/math/integer.go	/^func SafeSub(x, y uint64) (uint64, bool) {$/;"	f
+SanityCheck	types/block.go	/^func (b *Block) SanityCheck() error {$/;"	f
+SanityCheck	types/block.go	/^func (h *Header) SanityCheck() error {$/;"	f
+Scan	common/types.go	/^func (a *Address) Scan(src interface{}) error {$/;"	f
+Scan	common/types.go	/^func (h *Hash) Scan(src interface{}) error {$/;"	f
+SendTransaction	ethclient.go	/^func (ec *Client) SendTransaction(ctx context.Context, tx *types.Transaction) error {$/;"	f
+Sender	signer.go	/^func (s *senderFromServer) Sender(tx *types.Transaction) (common.Address, error) {$/;"	f
+Sender	types/transaction_signing.go	/^func (fs FrontierSigner) Sender(tx *Transaction) (common.Address, error) {$/;"	f
+Sender	types/transaction_signing.go	/^func (hs HomesteadSigner) Sender(tx *Transaction) (common.Address, error) {$/;"	f
+Sender	types/transaction_signing.go	/^func (s EIP155Signer) Sender(tx *Transaction) (common.Address, error) {$/;"	f
+Sender	types/transaction_signing.go	/^func (s eip2930Signer) Sender(tx *Transaction) (common.Address, error) {$/;"	f
+Sender	types/transaction_signing.go	/^func (s londonSigner) Sender(tx *Transaction) (common.Address, error) {$/;"	f
+Sender	types/transaction_signing.go	/^func Sender(signer Signer, tx *Transaction) (common.Address, error) {$/;"	f
+SetBytes	common/types.go	/^func (a *Address) SetBytes(b []byte) {$/;"	f
+SetBytes	common/types.go	/^func (h *Hash) SetBytes(b []byte) {$/;"	f
+SetBytes	types/bloom9.go	/^func (b *Bloom) SetBytes(d []byte) {$/;"	f
+SetHead	gethclient/gethclient.go	/^func (ec *Client) SetHead(ctx context.Context, number *big.Int) error {$/;"	f
+Shift	types/transaction.go	/^func (t *TransactionsByPriceAndNonce) Shift() {$/;"	f
+SigToPub	crypto/signature.go	/^func SigToPub(hash, sig []byte) (*ecdsa.PublicKey, error) {$/;"	f
+Sign	crypto/signature.go	/^func Sign(hash []byte, prv *ecdsa.PrivateKey) ([]byte, error) {$/;"	f
+SignNewTx	types/transaction_signing.go	/^func SignNewTx(prv *ecdsa.PrivateKey, s Signer, txdata TxData) (*Transaction, error) {$/;"	f
+SignTx	types/transaction_signing.go	/^func SignTx(tx *Transaction, s Signer, prv *ecdsa.PrivateKey) (*Transaction, error) {$/;"	f
+SignatureLength	crypto/crypto.go	/^const SignatureLength = 64 + 1 \/\/ 64 bytes ECDSA signature + 1 byte recovery id$/;"	c
+SignatureValues	signer.go	/^func (s *senderFromServer) SignatureValues(tx *types.Transaction, sig []byte) (R, S, V *big.Int, err error) {$/;"	f
+SignatureValues	types/transaction_signing.go	/^func (fs FrontierSigner) SignatureValues(tx *Transaction, sig []byte) (r, s, v *big.Int, err error) {$/;"	f
+SignatureValues	types/transaction_signing.go	/^func (hs HomesteadSigner) SignatureValues(tx *Transaction, sig []byte) (r, s, v *big.Int, err error) {$/;"	f
+SignatureValues	types/transaction_signing.go	/^func (s EIP155Signer) SignatureValues(tx *Transaction, sig []byte) (R, S, V *big.Int, err error) {$/;"	f
+SignatureValues	types/transaction_signing.go	/^func (s eip2930Signer) SignatureValues(tx *Transaction, sig []byte) (R, S, V *big.Int, err error) {$/;"	f
+SignatureValues	types/transaction_signing.go	/^func (s londonSigner) SignatureValues(tx *Transaction, sig []byte) (R, S, V *big.Int, err error) {$/;"	f
+Signer	types/transaction_signing.go	/^type Signer interface {$/;"	t
+Size	types/block.go	/^func (b *Block) Size() common.StorageSize {$/;"	f
+Size	types/block.go	/^func (h *Header) Size() common.StorageSize {$/;"	f
+Size	types/receipt.go	/^func (r *Receipt) Size() common.StorageSize {$/;"	f
+Size	types/transaction.go	/^func (tx *Transaction) Size() common.StorageSize {$/;"	f
+Split	rlp/raw.go	/^func Split(b []byte) (k Kind, content, rest []byte, err error) {$/;"	f
+SplitList	rlp/raw.go	/^func SplitList(b []byte) (content, rest []byte, err error) {$/;"	f
+SplitString	rlp/raw.go	/^func SplitString(b []byte) (content, rest []byte, err error) {$/;"	f
+SplitUint64	rlp/raw.go	/^func SplitUint64(b []byte) (x uint64, rest []byte, err error) {$/;"	f
+StorageAt	ethclient.go	/^func (ec *Client) StorageAt(ctx context.Context, account common.Address, key common.Hash, blockNumber *big.Int) ([]byte, error) {$/;"	f
+StorageKeys	types/access_list_tx.go	/^func (al AccessList) StorageKeys() int {$/;"	f
+StorageResult	gethclient/gethclient.go	/^type StorageResult struct {$/;"	t
+StorageSize	common/size.go	/^type StorageSize float64$/;"	t
+Stream	rlp/decode.go	/^type Stream struct {$/;"	t
+String	common/hexutil/json.go	/^func (b *Big) String() string {$/;"	f
+String	common/hexutil/json.go	/^func (b Bytes) String() string {$/;"	f
+String	common/hexutil/json.go	/^func (b Uint) String() string {$/;"	f
+String	common/hexutil/json.go	/^func (b Uint64) String() string {$/;"	f
+String	common/hexutil/json_example_test.go	/^func (v MyType) String() string {$/;"	f
+String	common/math/big.go	/^func (i *Decimal256) String() string {$/;"	f
+String	common/size.go	/^func (s StorageSize) String() string {$/;"	f
+String	common/types.go	/^func (a Address) String() string {$/;"	f
+String	common/types.go	/^func (h Hash) String() string {$/;"	f
+String	common/types.go	/^func (ma *MixedcaseAddress) String() string {$/;"	f
+String	rlp/decode.go	/^	String$/;"	c
+String	rlp/decode.go	/^func (k Kind) String() string {$/;"	f
+SubscribeFilterLogs	ethclient.go	/^func (ec *Client) SubscribeFilterLogs(ctx context.Context, q ethereum.FilterQuery, ch chan<- types.Log) (ethereum.Subscription, error) {$/;"	f
+SubscribeNewHead	ethclient.go	/^func (ec *Client) SubscribeNewHead(ctx context.Context, ch chan<- *types.Header) (ethereum.Subscription, error) {$/;"	f
+SubscribePendingTransactions	gethclient/gethclient.go	/^func (ec *Client) SubscribePendingTransactions(ctx context.Context, ch chan<- common.Hash) (*rpc.ClientSubscription, error) {$/;"	f
+Subscription	types/ethereum/interfaces.go	/^type Subscription interface {$/;"	t
+SuggestGasPrice	ethclient.go	/^func (ec *Client) SuggestGasPrice(ctx context.Context) (*big.Int, error) {$/;"	f
+SuggestGasTipCap	ethclient.go	/^func (ec *Client) SuggestGasTipCap(ctx context.Context) (*big.Int, error) {$/;"	f
+Swap	types/transaction.go	/^func (s TxByNonce) Swap(i, j int)      { s[i], s[j] = s[j], s[i] }$/;"	f
+Swap	types/transaction.go	/^func (s TxByPriceAndTime) Swap(i, j int) { s[i], s[j] = s[j], s[i] }$/;"	f
+SyncProgress	ethclient.go	/^func (ec *Client) SyncProgress(ctx context.Context) (*ethereum.SyncProgress, error) {$/;"	f
+SyncProgress	types/ethereum/interfaces.go	/^type SyncProgress struct {$/;"	t
+TerminalString	common/size.go	/^func (s StorageSize) TerminalString() string {$/;"	f
+TerminalString	common/types.go	/^func (h Hash) TerminalString() string {$/;"	f
+Test	types/bloom9.go	/^func (b Bloom) Test(topic []byte) bool {$/;"	f
+TestAddressHexChecksum	common/types_test.go	/^func TestAddressHexChecksum(t *testing.T) {$/;"	f
+TestAddressUnmarshalJSON	common/types_test.go	/^func TestAddressUnmarshalJSON(t *testing.T) {$/;"	f
+TestAddress_Format	common/types_test.go	/^func TestAddress_Format(t *testing.T) {$/;"	f
+TestAddress_Scan	common/types_test.go	/^func TestAddress_Scan(t *testing.T) {$/;"	f
+TestAppendUint64	rlp/raw_test.go	/^func TestAppendUint64(t *testing.T) {$/;"	f
+TestAppendUint64Random	rlp/raw_test.go	/^func TestAppendUint64Random(t *testing.T) {$/;"	f
+TestBigEndianByteAt	common/math/big_test.go	/^func TestBigEndianByteAt(t *testing.T) {$/;"	f
+TestBigMax	common/math/big_test.go	/^func TestBigMax(t *testing.T) {$/;"	f
+TestBigMin	common/math/big_test.go	/^func TestBigMin(t *testing.T) {$/;"	f
+TestBlockEncoding	types/block_test.go	/^func TestBlockEncoding(t *testing.T) {$/;"	f
+TestBloom	types/bloom9_test.go	/^func TestBloom(t *testing.T) {$/;"	f
+TestBloomExtensively	types/bloom9_test.go	/^func TestBloomExtensively(t *testing.T) {$/;"	f
+TestBytesConversion	common/types_test.go	/^func TestBytesConversion(t *testing.T) {$/;"	f
+TestChainId	types/transaction_signing_test.go	/^func TestChainId(t *testing.T) {$/;"	f
+TestCompressPubkey	crypto/signature_test.go	/^func TestCompressPubkey(t *testing.T) {$/;"	f
+TestCopyBytes	common/bytes_test.go	/^func TestCopyBytes(t *testing.T) {$/;"	f
+TestCountValues	rlp/raw_test.go	/^func TestCountValues(t *testing.T) {$/;"	f
+TestDecode	common/hexutil/hexutil_test.go	/^func TestDecode(t *testing.T) {$/;"	f
+TestDecodeBig	common/hexutil/hexutil_test.go	/^func TestDecodeBig(t *testing.T) {$/;"	f
+TestDecodeDecoder	rlp/decode_test.go	/^func TestDecodeDecoder(t *testing.T) {$/;"	f
+TestDecodeDecoderNilPointer	rlp/decode_test.go	/^func TestDecodeDecoderNilPointer(t *testing.T) {$/;"	f
+TestDecodeEmptyTypedReceipt	types/receipt_test.go	/^func TestDecodeEmptyTypedReceipt(t *testing.T) {$/;"	f
+TestDecodeEmptyTypedTx	types/transaction_test.go	/^func TestDecodeEmptyTypedTx(t *testing.T) {$/;"	f
+TestDecodeErrors	rlp/decode_test.go	/^func TestDecodeErrors(t *testing.T) {$/;"	f
+TestDecodeStreamReset	rlp/decode_test.go	/^func TestDecodeStreamReset(t *testing.T) {$/;"	f
+TestDecodeUint64	common/hexutil/hexutil_test.go	/^func TestDecodeUint64(t *testing.T) {$/;"	f
+TestDecodeWithByteReader	rlp/decode_test.go	/^func TestDecodeWithByteReader(t *testing.T) {$/;"	f
+TestDecodeWithEncReader	rlp/decode_test.go	/^func TestDecodeWithEncReader(t *testing.T) {$/;"	f
+TestDecodeWithNonByteReader	rlp/decode_test.go	/^func TestDecodeWithNonByteReader(t *testing.T) {$/;"	f
+TestDecoderFunc	rlp/decode_test.go	/^func TestDecoderFunc(t *testing.T) {$/;"	f
+TestDecoderInByteSlice	rlp/decode_test.go	/^func TestDecoderInByteSlice(t *testing.T) {$/;"	f
+TestDecompressPubkey	crypto/signature_test.go	/^func TestDecompressPubkey(t *testing.T) {$/;"	f
+TestEIP1559BlockEncoding	types/block_test.go	/^func TestEIP1559BlockEncoding(t *testing.T) {$/;"	f
+TestEIP155ChainId	types/transaction_signing_test.go	/^func TestEIP155ChainId(t *testing.T) {$/;"	f
+TestEIP155Signing	types/transaction_signing_test.go	/^func TestEIP155Signing(t *testing.T) {$/;"	f
+TestEIP155SigningVitalik	types/transaction_signing_test.go	/^func TestEIP155SigningVitalik(t *testing.T) {$/;"	f
+TestEIP2718BlockEncoding	types/block_test.go	/^func TestEIP2718BlockEncoding(t *testing.T) {$/;"	f
+TestEIP2718DeriveSha	types/hashing_test.go	/^func TestEIP2718DeriveSha(t *testing.T) {$/;"	f
+TestEIP2718TransactionEncode	types/transaction_test.go	/^func TestEIP2718TransactionEncode(t *testing.T) {$/;"	f
+TestEIP2718TransactionSigHash	types/transaction_test.go	/^func TestEIP2718TransactionSigHash(t *testing.T) {$/;"	f
+TestEIP2930Signer	types/transaction_test.go	/^func TestEIP2930Signer(t *testing.T) {$/;"	f
+TestEcrecover	crypto/signature_test.go	/^func TestEcrecover(t *testing.T) {$/;"	f
+TestEncode	common/hexutil/hexutil_test.go	/^func TestEncode(t *testing.T) {$/;"	f
+TestEncode	rlp/encode_test.go	/^func TestEncode(t *testing.T) {$/;"	f
+TestEncodeBig	common/hexutil/hexutil_test.go	/^func TestEncodeBig(t *testing.T) {$/;"	f
+TestEncodeToBytes	rlp/encode_test.go	/^func TestEncodeToBytes(t *testing.T) {$/;"	f
+TestEncodeToReader	rlp/encode_test.go	/^func TestEncodeToReader(t *testing.T) {$/;"	f
+TestEncodeToReaderPiecewise	rlp/encode_test.go	/^func TestEncodeToReaderPiecewise(t *testing.T) {$/;"	f
+TestEncodeToReaderReturnToPool	rlp/encode_test.go	/^func TestEncodeToReaderReturnToPool(t *testing.T) {$/;"	f
+TestEncodeUint64	common/hexutil/hexutil_test.go	/^func TestEncodeUint64(t *testing.T) {$/;"	f
+TestExp	common/math/big_test.go	/^func TestExp(t *testing.T) {$/;"	f
+TestFirstBigSet	common/math/big_test.go	/^func TestFirstBigSet(t *testing.T) {$/;"	f
+TestFromHex	common/bytes_test.go	/^func TestFromHex(t *testing.T) {$/;"	f
+TestFromHexOddLength	common/bytes_test.go	/^func TestFromHexOddLength(t *testing.T) {$/;"	f
+TestHashJsonValidation	common/types_test.go	/^func TestHashJsonValidation(t *testing.T) {$/;"	f
+TestHash_Format	common/types_test.go	/^func TestHash_Format(t *testing.T) {$/;"	f
+TestHash_Scan	common/types_test.go	/^func TestHash_Scan(t *testing.T) {$/;"	f
+TestHexOrDecimal256	common/math/big_test.go	/^func TestHexOrDecimal256(t *testing.T) {$/;"	f
+TestHexOrDecimal64	common/math/integer_test.go	/^func TestHexOrDecimal64(t *testing.T) {$/;"	f
+TestInvalidOptionalField	rlp/decode_test.go	/^func TestInvalidOptionalField(t *testing.T) {$/;"	f
+TestInvalidSign	crypto/crypto_test.go	/^func TestInvalidSign(t *testing.T) {$/;"	f
+TestIsHex	common/bytes_test.go	/^func TestIsHex(t *testing.T) {$/;"	f
+TestIsHexAddress	common/types_test.go	/^func TestIsHexAddress(t *testing.T) {$/;"	f
+TestIterator	rlp/iterator_test.go	/^func TestIterator(t *testing.T) {$/;"	f
+TestKeccak256Hash	crypto/crypto_test.go	/^func TestKeccak256Hash(t *testing.T) {$/;"	f
+TestLeftPadBytes	common/bytes_test.go	/^func TestLeftPadBytes(t *testing.T) {$/;"	f
+TestLegacyReceiptDecoding	types/receipt_test.go	/^func TestLegacyReceiptDecoding(t *testing.T) {$/;"	f
+TestLittleEndianByteAt	common/math/big_test.go	/^func TestLittleEndianByteAt(t *testing.T) {$/;"	f
+TestLoadECDSAFile	crypto/crypto_test.go	/^func TestLoadECDSAFile(t *testing.T) {$/;"	f
+TestMarshalBig	common/hexutil/json_test.go	/^func TestMarshalBig(t *testing.T) {$/;"	f
+TestMarshalBytes	common/hexutil/json_test.go	/^func TestMarshalBytes(t *testing.T) {$/;"	f
+TestMarshalUint	common/hexutil/json_test.go	/^func TestMarshalUint(t *testing.T) {$/;"	f
+TestMarshalUint64	common/hexutil/json_test.go	/^func TestMarshalUint64(t *testing.T) {$/;"	f
+TestMixedcaseAccount_Address	common/types_test.go	/^func TestMixedcaseAccount_Address(t *testing.T) {$/;"	f
+TestMustParseBig256	common/math/big_test.go	/^func TestMustParseBig256(t *testing.T) {$/;"	f
+TestMustParseUint64	common/math/integer_test.go	/^func TestMustParseUint64(t *testing.T) {$/;"	f
+TestMustParseUint64Panic	common/math/integer_test.go	/^func TestMustParseUint64Panic(t *testing.T) {$/;"	f
+TestNewContractAddress	crypto/crypto_test.go	/^func TestNewContractAddress(t *testing.T) {$/;"	f
+TestNewListStream	rlp/decode_test.go	/^func TestNewListStream(t *testing.T) {$/;"	f
+TestNoPrefixShortHexOddLength	common/bytes_test.go	/^func TestNoPrefixShortHexOddLength(t *testing.T) {$/;"	f
+TestOverflow	common/math/integer_test.go	/^func TestOverflow(t *testing.T) {$/;"	f
+TestPaddedBigBytes	common/math/big_test.go	/^func TestPaddedBigBytes(t *testing.T) {$/;"	f
+TestPubkeyRandom	crypto/signature_test.go	/^func TestPubkeyRandom(t *testing.T) {$/;"	f
+TestPythonIntegration	crypto/crypto_test.go	/^func TestPythonIntegration(t *testing.T) {$/;"	f
+TestReadBits	common/math/big_test.go	/^func TestReadBits(t *testing.T) {$/;"	f
+TestReadSize	rlp/raw_test.go	/^func TestReadSize(t *testing.T) {$/;"	f
+TestRecipientEmpty	types/transaction_test.go	/^func TestRecipientEmpty(t *testing.T) {$/;"	f
+TestRecipientNormal	types/transaction_test.go	/^func TestRecipientNormal(t *testing.T) {$/;"	f
+TestRightPadBytes	common/bytes_test.go	/^func TestRightPadBytes(t *testing.T) {$/;"	f
+TestS256	common/math/big_test.go	/^func TestS256(t *testing.T) {$/;"	f
+TestSign	crypto/crypto_test.go	/^func TestSign(t *testing.T) {$/;"	f
+TestSplit	rlp/raw_test.go	/^func TestSplit(t *testing.T) {$/;"	f
+TestSplitTypes	rlp/raw_test.go	/^func TestSplitTypes(t *testing.T) {$/;"	f
+TestSplitUint64	rlp/raw_test.go	/^func TestSplitUint64(t *testing.T) {$/;"	f
+TestStreamErrors	rlp/decode_test.go	/^func TestStreamErrors(t *testing.T) {$/;"	f
+TestStreamKind	rlp/decode_test.go	/^func TestStreamKind(t *testing.T) {$/;"	f
+TestStreamList	rlp/decode_test.go	/^func TestStreamList(t *testing.T) {$/;"	f
+TestStreamRaw	rlp/decode_test.go	/^func TestStreamRaw(t *testing.T) {$/;"	f
+TestToECDSAErrors	crypto/crypto_test.go	/^func TestToECDSAErrors(t *testing.T) {$/;"	f
+TestTransactionCoding	types/transaction_test.go	/^func TestTransactionCoding(t *testing.T) {$/;"	f
+TestTransactionEncode	types/transaction_test.go	/^func TestTransactionEncode(t *testing.T) {$/;"	f
+TestTransactionPriceNonceSort1559	types/transaction_test.go	/^func TestTransactionPriceNonceSort1559(t *testing.T) {$/;"	f
+TestTransactionPriceNonceSortLegacy	types/transaction_test.go	/^func TestTransactionPriceNonceSortLegacy(t *testing.T) {$/;"	f
+TestTransactionSigHash	types/transaction_test.go	/^func TestTransactionSigHash(t *testing.T) {$/;"	f
+TestTransactionTimeSort	types/transaction_test.go	/^func TestTransactionTimeSort(t *testing.T) {$/;"	f
+TestTrimRightZeroes	common/bytes_test.go	/^func TestTrimRightZeroes(t *testing.T) {$/;"	f
+TestTxHash	types/transaction_test.go	/^func TestTxHash(t *testing.T) {$/;"	f
+TestTypedReceiptEncodingDecoding	types/receipt_test.go	/^func TestTypedReceiptEncodingDecoding(t *testing.T) {$/;"	f
+TestU256	common/math/big_test.go	/^func TestU256(t *testing.T) {$/;"	f
+TestU256Bytes	common/math/big_test.go	/^func TestU256Bytes(t *testing.T) {$/;"	f
+TestUncleHash	types/block_test.go	/^func TestUncleHash(t *testing.T) {$/;"	f
+TestUnmarshalBig	common/hexutil/json_test.go	/^func TestUnmarshalBig(t *testing.T) {$/;"	f
+TestUnmarshalBytes	common/hexutil/json_test.go	/^func TestUnmarshalBytes(t *testing.T) {$/;"	f
+TestUnmarshalFixedUnprefixedText	common/hexutil/json_test.go	/^func TestUnmarshalFixedUnprefixedText(t *testing.T) {$/;"	f
+TestUnmarshalLog	types/log_test.go	/^func TestUnmarshalLog(t *testing.T) {$/;"	f
+TestUnmarshalPubkey	crypto/crypto_test.go	/^func TestUnmarshalPubkey(t *testing.T) {$/;"	f
+TestUnmarshalUint	common/hexutil/json_test.go	/^func TestUnmarshalUint(t *testing.T) {$/;"	f
+TestUnmarshalUint64	common/hexutil/json_test.go	/^func TestUnmarshalUint64(t *testing.T) {$/;"	f
+TestValidateSignatureValues	crypto/crypto_test.go	/^func TestValidateSignatureValues(t *testing.T) {$/;"	f
+TestVerifySignature	crypto/signature_test.go	/^func TestVerifySignature(t *testing.T) {$/;"	f
+TestVerifySignatureMalleable	crypto/signature_test.go	/^func TestVerifySignatureMalleable(t *testing.T) {$/;"	f
+Time	types/block.go	/^func (b *Block) Time() uint64         { return b.header.Time }$/;"	f
+To	types/transaction.go	/^func (m Message) To() *common.Address    { return m.to }$/;"	f
+To	types/transaction.go	/^func (tx *Transaction) To() *common.Address {$/;"	f
+ToECDSA	crypto/crypto.go	/^func ToECDSA(d []byte) (*ecdsa.PrivateKey, error) {$/;"	f
+ToECDSAUnsafe	crypto/crypto.go	/^func ToECDSAUnsafe(d []byte) *ecdsa.PrivateKey {$/;"	f
+ToInt	common/hexutil/json.go	/^func (b *Big) ToInt() *big.Int {$/;"	f
+ToJSONString	common/utils.go	/^func ToJSONString(content interface{}, pretty bool) string {$/;"	f
+Transaction	types/block.go	/^func (b *Block) Transaction(hash common.Hash) *Transaction {$/;"	f
+Transaction	types/transaction.go	/^type Transaction struct {$/;"	t
+TransactionByHash	ethclient.go	/^func (ec *Client) TransactionByHash(ctx context.Context, hash common.Hash) (tx *types.Transaction, isPending bool, err error) {$/;"	f
+TransactionCount	ethclient.go	/^func (ec *Client) TransactionCount(ctx context.Context, blockHash common.Hash) (uint, error) {$/;"	f
+TransactionInBlock	ethclient.go	/^func (ec *Client) TransactionInBlock(ctx context.Context, blockHash common.Hash, index uint) (*types.Transaction, error) {$/;"	f
+TransactionReader	types/ethereum/interfaces.go	/^type TransactionReader interface {$/;"	t
+TransactionReceipt	ethclient.go	/^func (ec *Client) TransactionReceipt(ctx context.Context, txHash common.Hash) (*types.Receipt, error) {$/;"	f
+TransactionSender	ethclient.go	/^func (ec *Client) TransactionSender(ctx context.Context, tx *types.Transaction, block common.Hash, index uint) (common.Address, error) {$/;"	f
+TransactionSender	types/ethereum/interfaces.go	/^type TransactionSender interface {$/;"	t
+Transactions	types/block.go	/^func (b *Block) Transactions() Transactions { return b.transactions }$/;"	f
+Transactions	types/transaction.go	/^type Transactions []*Transaction$/;"	t
+TransactionsByPriceAndNonce	types/transaction.go	/^type TransactionsByPriceAndNonce struct {$/;"	t
+TrieHasher	types/hashing.go	/^type TrieHasher interface {$/;"	t
+TrimLeftZeroes	common/bytes.go	/^func TrimLeftZeroes(s []byte) []byte {$/;"	f
+TrimRightZeroes	common/bytes.go	/^func TrimRightZeroes(s []byte) []byte {$/;"	f
+TxByNonce	types/transaction.go	/^type TxByNonce Transactions$/;"	t
+TxByPriceAndTime	types/transaction.go	/^type TxByPriceAndTime []*TxWithMinerFee$/;"	t
+TxData	types/transaction.go	/^type TxData interface {$/;"	t
+TxDifference	types/transaction.go	/^func TxDifference(a, b Transactions) Transactions {$/;"	f
+TxHash	types/block.go	/^func (b *Block) TxHash() common.Hash      { return b.header.TxHash }$/;"	f
+TxWithMinerFee	types/transaction.go	/^type TxWithMinerFee struct {$/;"	t
+Type	types/transaction.go	/^func (tx *Transaction) Type() uint8 {$/;"	f
+U256	common/math/big.go	/^func U256(x *big.Int) *big.Int {$/;"	f
+U256Bytes	common/math/big.go	/^func U256Bytes(n *big.Int) []byte {$/;"	f
+Uint	common/hexutil/json.go	/^type Uint uint$/;"	t
+Uint	rlp/decode.go	/^func (s *Stream) Uint() (uint64, error) {$/;"	f
+Uint64	common/hexutil/json.go	/^type Uint64 uint64$/;"	t
+Uint64	types/block.go	/^func (n BlockNonce) Uint64() uint64 {$/;"	f
+UncleHash	types/block.go	/^func (b *Block) UncleHash() common.Hash   { return b.header.UncleHash }$/;"	f
+Uncles	types/block.go	/^func (b *Block) Uncles() []*Header          { return b.uncles }$/;"	f
+UnmarshalBigInt	common/big.go	/^func UnmarshalBigInt(s string) (*big.Int, error) {$/;"	f
+UnmarshalBinary	types/transaction.go	/^func (tx *Transaction) UnmarshalBinary(b []byte) error {$/;"	f
+UnmarshalFixedJSON	common/hexutil/json.go	/^func UnmarshalFixedJSON(typ reflect.Type, input, out []byte) error {$/;"	f
+UnmarshalFixedText	common/hexutil/json.go	/^func UnmarshalFixedText(typname string, input, out []byte) error {$/;"	f
+UnmarshalFixedUnprefixedText	common/hexutil/json.go	/^func UnmarshalFixedUnprefixedText(typname string, input, out []byte) error {$/;"	f
+UnmarshalGraphQL	common/hexutil/json.go	/^func (b *Big) UnmarshalGraphQL(input interface{}) error {$/;"	f
+UnmarshalGraphQL	common/hexutil/json.go	/^func (b *Bytes) UnmarshalGraphQL(input interface{}) error {$/;"	f
+UnmarshalGraphQL	common/hexutil/json.go	/^func (b *Uint64) UnmarshalGraphQL(input interface{}) error {$/;"	f
+UnmarshalGraphQL	common/types.go	/^func (a *Address) UnmarshalGraphQL(input interface{}) error {$/;"	f
+UnmarshalGraphQL	common/types.go	/^func (h *Hash) UnmarshalGraphQL(input interface{}) error {$/;"	f
+UnmarshalJSON	common/hexutil/json.go	/^func (b *Big) UnmarshalJSON(input []byte) error {$/;"	f
+UnmarshalJSON	common/hexutil/json.go	/^func (b *Bytes) UnmarshalJSON(input []byte) error {$/;"	f
+UnmarshalJSON	common/hexutil/json.go	/^func (b *Uint) UnmarshalJSON(input []byte) error {$/;"	f
+UnmarshalJSON	common/hexutil/json.go	/^func (b *Uint64) UnmarshalJSON(input []byte) error {$/;"	f
+UnmarshalJSON	common/types.go	/^func (a *Address) UnmarshalJSON(input []byte) error {$/;"	f
+UnmarshalJSON	common/types.go	/^func (h *Hash) UnmarshalJSON(input []byte) error {$/;"	f
+UnmarshalJSON	common/types.go	/^func (ma *MixedcaseAddress) UnmarshalJSON(input []byte) error {$/;"	f
+UnmarshalJSON	ethclient.go	/^func (tx *rpcTransaction) UnmarshalJSON(msg []byte) error {$/;"	f
+UnmarshalJSON	types/gen_access_tuple.go	/^func (a *AccessTuple) UnmarshalJSON(input []byte) error {$/;"	f
+UnmarshalJSON	types/gen_header_json.go	/^func (h *Header) UnmarshalJSON(input []byte) error {$/;"	f
+UnmarshalJSON	types/gen_log_json.go	/^func (l *Log) UnmarshalJSON(input []byte) error {$/;"	f
+UnmarshalJSON	types/gen_receipt_json.go	/^func (r *Receipt) UnmarshalJSON(input []byte) error {$/;"	f
+UnmarshalJSON	types/transaction_marshalling.go	/^func (t *Transaction) UnmarshalJSON(input []byte) error {$/;"	f
+UnmarshalPubkey	crypto/crypto.go	/^func UnmarshalPubkey(pub []byte) (*ecdsa.PublicKey, error) {$/;"	f
+UnmarshalText	common/hexutil/json.go	/^func (b *Big) UnmarshalText(input []byte) error {$/;"	f
+UnmarshalText	common/hexutil/json.go	/^func (b *Bytes) UnmarshalText(input []byte) error {$/;"	f
+UnmarshalText	common/hexutil/json.go	/^func (b *Uint) UnmarshalText(input []byte) error {$/;"	f
+UnmarshalText	common/hexutil/json.go	/^func (b *Uint64) UnmarshalText(input []byte) error {$/;"	f
+UnmarshalText	common/hexutil/json_example_test.go	/^func (v *MyType) UnmarshalText(input []byte) error {$/;"	f
+UnmarshalText	common/math/big.go	/^func (i *Decimal256) UnmarshalText(input []byte) error {$/;"	f
+UnmarshalText	common/math/big.go	/^func (i *HexOrDecimal256) UnmarshalText(input []byte) error {$/;"	f
+UnmarshalText	common/math/integer.go	/^func (i *HexOrDecimal64) UnmarshalText(input []byte) error {$/;"	f
+UnmarshalText	common/types.go	/^func (a *Address) UnmarshalText(input []byte) error {$/;"	f
+UnmarshalText	common/types.go	/^func (a *UnprefixedAddress) UnmarshalText(input []byte) error {$/;"	f
+UnmarshalText	common/types.go	/^func (h *Hash) UnmarshalText(input []byte) error {$/;"	f
+UnmarshalText	common/types.go	/^func (h *UnprefixedHash) UnmarshalText(input []byte) error {$/;"	f
+UnmarshalText	types/block.go	/^func (n *BlockNonce) UnmarshalText(input []byte) error {$/;"	f
+UnmarshalText	types/bloom9.go	/^func (b *Bloom) UnmarshalText(input []byte) error {$/;"	f
+UnprefixedAddress	common/types.go	/^type UnprefixedAddress Address$/;"	t
+UnprefixedHash	common/types.go	/^type UnprefixedHash Hash$/;"	t
+Update	types/block_test.go	/^func (h *testHasher) Update(key, val []byte) {$/;"	f
+Update	types/hashing_test.go	/^func (d *hashToHumanReadable) Update(i []byte, i2 []byte) {$/;"	f
+ValidChecksum	common/types.go	/^func (ma *MixedcaseAddress) ValidChecksum() bool {$/;"	f
+ValidateSignatureValues	crypto/crypto.go	/^func ValidateSignatureValues(v byte, r, s *big.Int, homestead bool) bool {$/;"	f
+Value	rlp/iterator.go	/^func (it *listIterator) Value() []byte {$/;"	f
+Value	types/transaction.go	/^func (m Message) Value() *big.Int        { return m.amount }$/;"	f
+Value	types/transaction.go	/^func (tx *Transaction) Value() *big.Int { return new(big.Int).Set(tx.inner.value()) }$/;"	f
+VerifySignature	crypto/signature.go	/^func VerifySignature(pubkey, hash, signature []byte) bool {$/;"	f
+WithBody	types/block.go	/^func (b *Block) WithBody(transactions []*Transaction, uncles []*Header) *Block {$/;"	f
+WithSeal	types/block.go	/^func (b *Block) WithSeal(header *Header) *Block {$/;"	f
+WithSignature	types/transaction.go	/^func (tx *Transaction) WithSignature(signer Signer, sig []byte) (*Transaction, error) {$/;"	f
+Write	rlp/encode.go	/^func (w *encbuf) Write(b []byte) (int, error) {$/;"	f
+Write	types/block.go	/^func (c *writeCounter) Write(b []byte) (int, error) {$/;"	f
+_	crypto/crypto.go	/^	secp256k1N, _  = new(big.Int).SetString("fffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141", 16)$/;"	v
+_	rlp/encode_test.go	/^	_ = Encoder(&testEncoder{})$/;"	v
+_	rlp/encode_test.go	/^	_ = Encoder(byteEncoder(0))$/;"	v
+_	types/gen_header_json.go	/^var _ = (*headerMarshaling)(nil)$/;"	v
+_	types/gen_log_json.go	/^var _ = (*logMarshaling)(nil)$/;"	v
+_	types/gen_receipt_json.go	/^var _ = (*receiptMarshaling)(nil)$/;"	v
+_	types/transaction_test.go	/^	rightvrsTx, _ = NewTransaction($/;"	v
+_	types/transaction_test.go	/^	signedEip2718Tx, _ = emptyEip2718Tx.WithSignature($/;"	v
+accessList	types/access_list_tx.go	/^func (tx *AccessListTx) accessList() AccessList { return tx.AccessList }$/;"	f
+accessList	types/dynamic_fee_tx.go	/^func (tx *DynamicFeeTx) accessList() AccessList { return tx.AccessList }$/;"	f
+accessList	types/legacy_tx.go	/^func (tx *LegacyTx) accessList() AccessList { return nil }$/;"	f
+add	common/math/integer_test.go	/^	add$/;"	c
+add	types/bloom9.go	/^func (b *Bloom) add(d []byte, buf []byte) {$/;"	f
+addErrorContext	rlp/decode.go	/^func addErrorContext(err error, ctx string) error {$/;"	f
+addressT	common/types.go	/^	addressT = reflect.TypeOf(Address{})$/;"	v
+aminoCdc	types/transaction_amino.go	/^	aminoCdc       *amino.Codec$/;"	v
+aminoCdcInitor	types/transaction_amino.go	/^	aminoCdcInitor sync.Once$/;"	v
+assertEqual	types/transaction_test.go	/^func assertEqual(orig *Transaction, cpy *Transaction) error {$/;"	f
+badNibble	common/hexutil/hexutil.go	/^const badNibble = ^uint64(0)$/;"	c
+benchBuffer	types/block_test.go	/^var benchBuffer = bytes.NewBuffer(make([]byte, 0, 32000))$/;"	v
+big8	types/transaction_signing.go	/^var big8 = big.NewInt(8)$/;"	v
+bigEndianByteAt	common/math/big.go	/^func bigEndianByteAt(bigint *big.Int, n int) byte {$/;"	f
+bigInt	rlp/decode.go	/^	bigInt           = reflect.TypeOf(big.Int{})$/;"	v
+bigIntStruct	rlp/decode_test.go	/^type bigIntStruct struct {$/;"	t
+bigT	common/hexutil/json.go	/^	bigT    = reflect.TypeOf((*Big)(nil))$/;"	v
+bigWordNibbles	common/hexutil/hexutil.go	/^var bigWordNibbles int$/;"	v
+bloomValues	types/bloom9.go	/^func bloomValues(data []byte, hashbuf []byte) (uint, byte, uint, byte, uint, byte) {$/;"	f
+byteArrayBytes	rlp/safe.go	/^func byteArrayBytes(v reflect.Value) []byte {$/;"	f
+byteArrayBytes	rlp/unsafe.go	/^func byteArrayBytes(v reflect.Value) []byte {$/;"	f
+byteArrayStruct	rlp/encode_test.go	/^type byteArrayStruct struct {$/;"	t
+byteDecoder	rlp/decode_test.go	/^type byteDecoder byte$/;"	t
+byteEncoder	rlp/encode_test.go	/^type byteEncoder byte$/;"	t
+bytesBacked	types/bloom9.go	/^type bytesBacked interface {$/;"	t
+bytesHave0xPrefix	common/hexutil/json.go	/^func bytesHave0xPrefix(input []byte) bool {$/;"	f
+bytesT	common/hexutil/json.go	/^	bytesT  = reflect.TypeOf(Bytes(nil))$/;"	v
+cachedDecoder	rlp/typecache.go	/^func cachedDecoder(typ reflect.Type) (decoder, error) {$/;"	f
+cachedWriter	rlp/typecache.go	/^func cachedWriter(typ reflect.Type) (writer, error) {$/;"	f
+called	rlp/decode_test.go	/^func (bd byteDecoder) called() bool {$/;"	f
+chainID	types/access_list_tx.go	/^func (tx *AccessListTx) chainID() *big.Int      { return tx.ChainID }$/;"	f
+chainID	types/dynamic_fee_tx.go	/^func (tx *DynamicFeeTx) chainID() *big.Int      { return tx.ChainID }$/;"	f
+chainID	types/legacy_tx.go	/^func (tx *LegacyTx) chainID() *big.Int      { return deriveChainId(tx.V) }$/;"	f
+checkAddr	crypto/crypto_test.go	/^func checkAddr(t *testing.T, addr0, addr1 common.Address) {$/;"	f
+checkError	common/hexutil/json_test.go	/^func checkError(t *testing.T, input string, got, want error) bool {$/;"	f
+checkError	types/log_test.go	/^func checkError(t *testing.T, testname string, got, want error) bool {$/;"	f
+checkNumber	common/hexutil/hexutil.go	/^func checkNumber(input string) (raw string, err error) {$/;"	f
+checkNumberText	common/hexutil/json.go	/^func checkNumberText(input []byte) (raw []byte, err error) {$/;"	f
+checkText	common/hexutil/json.go	/^func checkText(input []byte, wantPrefix bool) ([]byte, error) {$/;"	f
+checkhash	crypto/crypto_test.go	/^func checkhash(t *testing.T, name string, f func([]byte) []byte, msg, exp []byte) {$/;"	f
+checksumHex	common/types.go	/^func (a *Address) checksumHex() []byte {$/;"	f
+clearComputedFieldsOnLog	types/receipt_test.go	/^func clearComputedFieldsOnLog(t *testing.T, log *Log) {$/;"	f
+clearComputedFieldsOnLogs	types/receipt_test.go	/^func clearComputedFieldsOnLogs(t *testing.T, logs []*Log) {$/;"	f
+clearComputedFieldsOnReceipt	types/receipt_test.go	/^func clearComputedFieldsOnReceipt(t *testing.T, receipt *Receipt) {$/;"	f
+clearComputedFieldsOnReceipts	types/receipt_test.go	/^func clearComputedFieldsOnReceipts(t *testing.T, receipts Receipts) {$/;"	f
+common	common/big.go	/^package common$/;"	p
+common	common/bytes.go	/^package common$/;"	p
+common	common/bytes_test.go	/^package common$/;"	p
+common	common/size.go	/^package common$/;"	p
+common	common/types.go	/^package common$/;"	p
+common	common/types_test.go	/^package common$/;"	p
+common	common/utils.go	/^package common$/;"	p
+copy	types/access_list_tx.go	/^func (tx *AccessListTx) copy() TxData {$/;"	f
+copy	types/dynamic_fee_tx.go	/^func (tx *DynamicFeeTx) copy() TxData {$/;"	f
+copy	types/legacy_tx.go	/^func (tx *LegacyTx) copy() TxData {$/;"	f
+crypto	crypto/crypto.go	/^package crypto$/;"	p
+crypto	crypto/crypto_test.go	/^package crypto$/;"	p
+crypto	crypto/signature.go	/^package crypto$/;"	p
+crypto	crypto/signature_test.go	/^package crypto$/;"	p
+data	types/access_list_tx.go	/^func (tx *AccessListTx) data() []byte           { return tx.Data }$/;"	f
+data	types/dynamic_fee_tx.go	/^func (tx *DynamicFeeTx) data() []byte           { return tx.Data }$/;"	f
+data	types/legacy_tx.go	/^func (tx *LegacyTx) data() []byte           { return tx.Data }$/;"	f
+decError	common/hexutil/hexutil.go	/^type decError struct{ msg string }$/;"	t
+decodeBigInt	rlp/decode.go	/^func decodeBigInt(s *Stream, val reflect.Value) error {$/;"	f
+decodeBigIntNoPtr	rlp/decode.go	/^func decodeBigIntNoPtr(s *Stream, val reflect.Value) error {$/;"	f
+decodeBigTests	common/hexutil/hexutil_test.go	/^	decodeBigTests = []unmarshalTest{$/;"	v
+decodeBool	rlp/decode.go	/^func decodeBool(s *Stream, val reflect.Value) error {$/;"	f
+decodeByteArray	rlp/decode.go	/^func decodeByteArray(s *Stream, val reflect.Value) error {$/;"	f
+decodeByteSlice	rlp/decode.go	/^func decodeByteSlice(s *Stream, val reflect.Value) error {$/;"	f
+decodeBytesTests	common/hexutil/hexutil_test.go	/^	decodeBytesTests = []unmarshalTest{$/;"	v
+decodeDecoder	rlp/decode.go	/^func decodeDecoder(s *Stream, val reflect.Value) error {$/;"	f
+decodeError	rlp/decode.go	/^type decodeError struct {$/;"	t
+decodeInterface	rlp/decode.go	/^func decodeInterface(s *Stream, val reflect.Value) error {$/;"	f
+decodeListArray	rlp/decode.go	/^func decodeListArray(s *Stream, val reflect.Value, elemdec decoder) error {$/;"	f
+decodeListSlice	rlp/decode.go	/^func decodeListSlice(s *Stream, val reflect.Value, elemdec decoder) error {$/;"	f
+decodeNibble	common/hexutil/hexutil.go	/^func decodeNibble(in byte) uint64 {$/;"	f
+decodeRawValue	rlp/decode.go	/^func decodeRawValue(s *Stream, val reflect.Value) error {$/;"	f
+decodeSignature	types/transaction_signing.go	/^func decodeSignature(sig []byte) (r, s, v *big.Int) {$/;"	f
+decodeSliceElems	rlp/decode.go	/^func decodeSliceElems(s *Stream, val reflect.Value, elemdec decoder) error {$/;"	f
+decodeStoredReceiptRLP	types/receipt.go	/^func decodeStoredReceiptRLP(r *ReceiptForStorage, blob []byte) error {$/;"	f
+decodeString	rlp/decode.go	/^func decodeString(s *Stream, val reflect.Value) error {$/;"	f
+decodeTest	rlp/decode_test.go	/^type decodeTest struct {$/;"	t
+decodeTests	rlp/decode_test.go	/^var decodeTests = []decodeTest{$/;"	v
+decodeTx	types/transaction_test.go	/^func decodeTx(data []byte) (*Transaction, error) {$/;"	f
+decodeTyped	types/transaction.go	/^func (tx *Transaction) decodeTyped(b []byte) (TxData, error) {$/;"	f
+decodeUint	rlp/decode.go	/^func decodeUint(s *Stream, val reflect.Value) error {$/;"	f
+decodeUint64Tests	common/hexutil/hexutil_test.go	/^	decodeUint64Tests = []unmarshalTest{$/;"	v
+decodeV3StoredReceiptRLP	types/receipt.go	/^func decodeV3StoredReceiptRLP(r *ReceiptForStorage, blob []byte) error {$/;"	f
+decodeV4StoredReceiptRLP	types/receipt.go	/^func decodeV4StoredReceiptRLP(r *ReceiptForStorage, blob []byte) error {$/;"	f
+decoder	rlp/typecache.go	/^type decoder func(*Stream, reflect.Value) error$/;"	t
+decoderInterface	rlp/decode.go	/^	decoderInterface = reflect.TypeOf(new(Decoder)).Elem()$/;"	v
+defaultNilKind	rlp/typecache.go	/^func defaultNilKind(typ reflect.Type) Kind {$/;"	f
+defaultTestKey	types/transaction_test.go	/^func defaultTestKey() (*ecdsa.PrivateKey, common.Address) {$/;"	f
+deriveChainId	types/transaction_signing.go	/^func deriveChainId(v *big.Int) *big.Int {$/;"	f
+dummyDerivableList	types/hashing_test.go	/^type dummyDerivableList struct {$/;"	t
+eip2930Signer	types/transaction_signing.go	/^type eip2930Signer struct{ EIP155Signer }$/;"	t
+emptyEip2718Tx	types/transaction_test.go	/^	emptyEip2718Tx = NewTx(&AccessListTx{$/;"	v
+emptyTx	types/transaction_test.go	/^	emptyTx = NewTransaction($/;"	v
+encReader	rlp/encode.go	/^type encReader struct {$/;"	t
+encTest	rlp/encode_test.go	/^type encTest struct {$/;"	t
+encTests	rlp/encode_test.go	/^var encTests = []encTest{$/;"	v
+encbuf	rlp/encode.go	/^type encbuf struct {$/;"	t
+encbufPool	rlp/encode.go	/^var encbufPool = sync.Pool{$/;"	v
+encodableReader	rlp/encode_test.go	/^type encodableReader struct {$/;"	t
+encodableTxData	types/transaction_amino.go	/^type encodableTxData struct {$/;"	t
+encode	rlp/encode.go	/^func (head *listhead) encode(buf []byte) []byte {$/;"	f
+encode	rlp/encode.go	/^func (w *encbuf) encode(val interface{}) error {$/;"	f
+encodeAsStoredReceiptRLP	types/receipt_test.go	/^func encodeAsStoredReceiptRLP(want *Receipt) ([]byte, error) {$/;"	f
+encodeAsV3StoredReceiptRLP	types/receipt_test.go	/^func encodeAsV3StoredReceiptRLP(want *Receipt) ([]byte, error) {$/;"	f
+encodeAsV4StoredReceiptRLP	types/receipt_test.go	/^func encodeAsV4StoredReceiptRLP(want *Receipt) ([]byte, error) {$/;"	f
+encodeBigTests	common/hexutil/hexutil_test.go	/^	encodeBigTests = []marshalTest{$/;"	v
+encodeBufferPool	types/hashing.go	/^var encodeBufferPool = sync.Pool{$/;"	v
+encodeBytesTests	common/hexutil/hexutil_test.go	/^	encodeBytesTests = []marshalTest{$/;"	v
+encodeDecodeBinary	types/transaction_test.go	/^func encodeDecodeBinary(tx *Transaction) (*Transaction, error) {$/;"	f
+encodeDecodeJSON	types/transaction_test.go	/^func encodeDecodeJSON(tx *Transaction) (*Transaction, error) {$/;"	f
+encodeForDerive	types/hashing.go	/^func encodeForDerive(list DerivableList, i int, buf *bytes.Buffer) []byte {$/;"	f
+encodeString	rlp/encode.go	/^func (w *encbuf) encodeString(b []byte) {$/;"	f
+encodeStringHeader	rlp/encode.go	/^func (w *encbuf) encodeStringHeader(size int) {$/;"	f
+encodeTestSlice	rlp/decode_test.go	/^func encodeTestSlice(n uint) []byte {$/;"	f
+encodeTyped	types/transaction.go	/^func (tx *Transaction) encodeTyped(w *bytes.Buffer) error {$/;"	f
+encodeUint	rlp/encode.go	/^func (w *encbuf) encodeUint(i uint64) {$/;"	f
+encodeUint64Tests	common/hexutil/hexutil_test.go	/^	encodeUint64Tests = []marshalTest{$/;"	v
+encodeUintTests	common/hexutil/hexutil_test.go	/^	encodeUintTests = []marshalTest{$/;"	v
+encoderInterface	rlp/encode.go	/^var encoderInterface = reflect.TypeOf(new(Encoder)).Elem()$/;"	v
+errDecodeIntoNil	rlp/decode.go	/^	errDecodeIntoNil = errors.New("rlp: pointer given to Decode must not be nil")$/;"	v
+errEmptyTypedReceipt	types/receipt.go	/^var errEmptyTypedReceipt = errors.New("empty typed receipt bytes")$/;"	v
+errEmptyTypedTx	types/transaction.go	/^	errEmptyTypedTx         = errors.New("empty typed transaction bytes")$/;"	v
+errInvalidPubkey	crypto/crypto.go	/^var errInvalidPubkey = errors.New("invalid secp256k1 public key")$/;"	v
+errJSONEOF	common/hexutil/json_test.go	/^var errJSONEOF = errors.New("unexpected end of JSON input")$/;"	v
+errNoPointer	rlp/decode.go	/^	errNoPointer     = errors.New("rlp: interface given to Decode must be a pointer")$/;"	v
+errNonString	common/hexutil/json.go	/^func errNonString(typ reflect.Type) error {$/;"	f
+errNotAtEOL	rlp/decode.go	/^	errNotAtEOL      = errors.New("rlp: call of ListEnd not positioned at EOL")$/;"	v
+errNotCached	signer.go	/^var errNotCached = errors.New("sender not cached")$/;"	v
+errNotInList	rlp/decode.go	/^	errNotInList     = errors.New("rlp: call of ListEnd outside of any list")$/;"	v
+errUintOverflow	rlp/decode.go	/^	errUintOverflow  = errors.New("rlp: uint overflow")$/;"	v
+ethclient	ethclient.go	/^package ethclient$/;"	p
+ethclient	signer.go	/^package ethclient$/;"	p
+ethereum	types/ethereum/interfaces.go	/^package ethereum$/;"	p
+extblock	types/block.go	/^type extblock struct {$/;"	t
+field	rlp/typecache.go	/^type field struct {$/;"	t
+firstOptionalField	rlp/typecache.go	/^func firstOptionalField(fields []field) int {$/;"	f
+flatList	types/hashing_test.go	/^type flatList []string$/;"	t
+gas	types/access_list_tx.go	/^func (tx *AccessListTx) gas() uint64            { return tx.Gas }$/;"	f
+gas	types/dynamic_fee_tx.go	/^func (tx *DynamicFeeTx) gas() uint64            { return tx.Gas }$/;"	f
+gas	types/legacy_tx.go	/^func (tx *LegacyTx) gas() uint64            { return tx.Gas }$/;"	f
+gasFeeCap	types/access_list_tx.go	/^func (tx *AccessListTx) gasFeeCap() *big.Int    { return tx.GasPrice }$/;"	f
+gasFeeCap	types/dynamic_fee_tx.go	/^func (tx *DynamicFeeTx) gasFeeCap() *big.Int    { return tx.GasFeeCap }$/;"	f
+gasFeeCap	types/legacy_tx.go	/^func (tx *LegacyTx) gasFeeCap() *big.Int    { return tx.GasPrice }$/;"	f
+gasPrice	types/access_list_tx.go	/^func (tx *AccessListTx) gasPrice() *big.Int     { return tx.GasPrice }$/;"	f
+gasPrice	types/dynamic_fee_tx.go	/^func (tx *DynamicFeeTx) gasPrice() *big.Int     { return tx.GasFeeCap }$/;"	f
+gasPrice	types/legacy_tx.go	/^func (tx *LegacyTx) gasPrice() *big.Int     { return tx.GasPrice }$/;"	f
+gasTipCap	types/access_list_tx.go	/^func (tx *AccessListTx) gasTipCap() *big.Int    { return tx.GasPrice }$/;"	f
+gasTipCap	types/dynamic_fee_tx.go	/^func (tx *DynamicFeeTx) gasTipCap() *big.Int    { return tx.GasTipCap }$/;"	f
+gasTipCap	types/legacy_tx.go	/^func (tx *LegacyTx) gasTipCap() *big.Int    { return tx.GasPrice }$/;"	f
+genTxs	types/hashing_test.go	/^func genTxs(num uint64) (types.Transactions, error) {$/;"	f
+generate	rlp/typecache.go	/^func (c *typeCache) generate(typ reflect.Type, tags tags) *typeinfo {$/;"	f
+generate	rlp/typecache.go	/^func (i *typeinfo) generate(typ reflect.Type, tags tags) {$/;"	f
+getAminoCdc	types/transaction_amino.go	/^func getAminoCdc() *amino.Codec {$/;"	f
+getBlock	ethclient.go	/^func (ec *Client) getBlock(ctx context.Context, method string, args ...interface{}) (*types.Block, error) {$/;"	f
+gethclient	gethclient/gethclient.go	/^package gethclient$/;"	p
+has0xPrefix	common/bytes.go	/^func has0xPrefix(str string) bool {$/;"	f
+has0xPrefix	common/hexutil/hexutil.go	/^func has0xPrefix(input string) bool {$/;"	f
+hashT	common/types.go	/^	hashT    = reflect.TypeOf(Hash{})$/;"	v
+hashToHumanReadable	types/hashing_test.go	/^type hashToHumanReadable struct {$/;"	t
+hasherPool	types/hashing.go	/^var hasherPool = sync.Pool{$/;"	v
+headerMarshaling	types/block.go	/^type headerMarshaling struct {$/;"	t
+headerSize	types/block.go	/^var headerSize = common.StorageSize(reflect.TypeOf(Header{}).Size())$/;"	v
+headsize	rlp/encode.go	/^func headsize(size uint64) int {$/;"	f
+hex	common/types.go	/^func (a Address) hex() []byte {$/;"	f
+hex2Bytes	common/math/big_test.go	/^func hex2Bytes(str string) []byte {$/;"	f
+hexutil	common/hexutil/hexutil.go	/^package hexutil$/;"	p
+hexutil	common/hexutil/hexutil_test.go	/^package hexutil$/;"	p
+hexutil	common/hexutil/json.go	/^package hexutil$/;"	p
+hexutil	common/hexutil/json_test.go	/^package hexutil$/;"	p
+hexutil_test	common/hexutil/json_example_test.go	/^package hexutil_test$/;"	p
+ifsliceType	rlp/decode.go	/^var ifsliceType = reflect.TypeOf([]interface{}{})$/;"	v
+ignoredField	rlp/decode_test.go	/^type ignoredField struct {$/;"	t
+info	rlp/typecache.go	/^func (c *typeCache) info(typ reflect.Type) *typeinfo {$/;"	f
+infoWhileGenerating	rlp/typecache.go	/^func (c *typeCache) infoWhileGenerating(typ reflect.Type, tags tags) *typeinfo {$/;"	f
+init	common/hexutil/hexutil.go	/^func init() {$/;"	f
+intField	rlp/decode_test.go	/^type intField struct {$/;"	t
+intsize	rlp/encode.go	/^func intsize(i uint64) (size int) {$/;"	f
+invalidNilTag	rlp/decode_test.go	/^type invalidNilTag struct {$/;"	t
+invalidTail1	rlp/decode_test.go	/^type invalidTail1 struct {$/;"	t
+invalidTail2	rlp/decode_test.go	/^type invalidTail2 struct {$/;"	t
+isByte	rlp/typecache.go	/^func isByte(typ reflect.Type) bool {$/;"	f
+isByteArray	rlp/typecache.go	/^func isByteArray(typ reflect.Type) bool {$/;"	f
+isHex	common/bytes.go	/^func isHex(str string) bool {$/;"	f
+isHexCharacter	common/bytes.go	/^func isHexCharacter(c byte) bool {$/;"	f
+isProtectedV	types/transaction.go	/^func isProtectedV(V *big.Int) bool {$/;"	f
+isString	common/hexutil/json.go	/^func isString(input []byte) bool {$/;"	f
+isUint	rlp/typecache.go	/^func isUint(k reflect.Kind) bool {$/;"	f
+lastPublicField	rlp/typecache.go	/^func lastPublicField(typ reflect.Type) int {$/;"	f
+legacyRlpStorageLog	types/log.go	/^type legacyRlpStorageLog struct {$/;"	t
+list	rlp/encode.go	/^func (w *encbuf) list() int {$/;"	f
+listEnd	rlp/encode.go	/^func (w *encbuf) listEnd(index int) {$/;"	f
+listIterator	rlp/iterator.go	/^type listIterator struct {$/;"	t
+listLimit	rlp/decode.go	/^func (s *Stream) listLimit() (inList bool, limit uint64) {$/;"	f
+listhead	rlp/encode.go	/^type listhead struct {$/;"	t
+logMarshaling	types/log.go	/^type logMarshaling struct {$/;"	t
+londonSigner	types/transaction_signing.go	/^type londonSigner struct{ eip2930Signer }$/;"	t
+makeBenchBlock	types/block_test.go	/^func makeBenchBlock() *Block {$/;"	f
+makeByteArrayWriter	rlp/encode.go	/^func makeByteArrayWriter(typ reflect.Type) writer {$/;"	f
+makeDecoder	rlp/decode.go	/^func makeDecoder(typ reflect.Type, tags tags) (dec decoder, err error) {$/;"	f
+makeEncoderWriter	rlp/encode.go	/^func makeEncoderWriter(typ reflect.Type) writer {$/;"	f
+makeListDecoder	rlp/decode.go	/^func makeListDecoder(typ reflect.Type, tag tags) (decoder, error) {$/;"	f
+makeNilPtrDecoder	rlp/decode.go	/^func makeNilPtrDecoder(etype reflect.Type, etypeinfo *typeinfo, nilKind Kind) decoder {$/;"	f
+makePtrDecoder	rlp/decode.go	/^func makePtrDecoder(typ reflect.Type, tag tags) (decoder, error) {$/;"	f
+makePtrWriter	rlp/encode.go	/^func makePtrWriter(typ reflect.Type, ts tags) (writer, error) {$/;"	f
+makeSimplePtrDecoder	rlp/decode.go	/^func makeSimplePtrDecoder(etype reflect.Type, etypeinfo *typeinfo) decoder {$/;"	f
+makeSliceWriter	rlp/encode.go	/^func makeSliceWriter(typ reflect.Type, ts tags) (writer, error) {$/;"	f
+makeStructDecoder	rlp/decode.go	/^func makeStructDecoder(typ reflect.Type) (decoder, error) {$/;"	f
+makeStructWriter	rlp/encode.go	/^func makeStructWriter(typ reflect.Type) (writer, error) {$/;"	f
+makeWriter	rlp/encode.go	/^func makeWriter(typ reflect.Type, ts tags) (writer, error) {$/;"	f
+mapError	common/hexutil/hexutil.go	/^func mapError(err error) error {$/;"	f
+marshalTest	common/hexutil/hexutil_test.go	/^type marshalTest struct {$/;"	t
+math	common/math/big.go	/^package math$/;"	p
+math	common/math/big_test.go	/^package math$/;"	p
+math	common/math/integer.go	/^package math$/;"	p
+math	common/math/integer_test.go	/^package math$/;"	p
+maxUint33bits	common/hexutil/json_test.go	/^	maxUint33bits = uint64(^uint32(0)) + 1$/;"	v
+maxUint64bits	common/hexutil/json_test.go	/^	maxUint64bits = ^uint64(0)$/;"	v
+mul	common/math/integer_test.go	/^	mul$/;"	c
+namedByteType	rlp/encode_test.go	/^type namedByteType byte$/;"	t
+newDummy	types/hashing_test.go	/^func newDummy(seed int) *dummyDerivableList {$/;"	f
+newHasher	types/block_test.go	/^func newHasher() *testHasher {$/;"	f
+newPlainReader	rlp/decode_test.go	/^func newPlainReader(b []byte) io.Reader {$/;"	f
+newTypeCache	rlp/typecache.go	/^func newTypeCache() *typeCache {$/;"	f
+next	rlp/encode.go	/^func (r *encReader) next() []byte {$/;"	f
+nilListUint	rlp/decode_test.go	/^type nilListUint struct {$/;"	t
+nilStringSlice	rlp/decode_test.go	/^type nilStringSlice struct {$/;"	t
+nonce	types/access_list_tx.go	/^func (tx *AccessListTx) nonce() uint64          { return tx.Nonce }$/;"	f
+nonce	types/dynamic_fee_tx.go	/^func (tx *DynamicFeeTx) nonce() uint64          { return tx.Nonce }$/;"	f
+nonce	types/legacy_tx.go	/^func (tx *LegacyTx) nonce() uint64          { return tx.Nonce }$/;"	f
+operation	common/math/integer_test.go	/^type operation byte$/;"	t
+optionalAndTailField	rlp/decode_test.go	/^type optionalAndTailField struct {$/;"	t
+optionalBigIntField	rlp/decode_test.go	/^type optionalBigIntField struct {$/;"	t
+optionalFields	rlp/decode_test.go	/^type optionalFields struct {$/;"	t
+optionalPtrField	rlp/decode_test.go	/^type optionalPtrField struct {$/;"	t
+optionalPtrFieldNil	rlp/decode_test.go	/^type optionalPtrFieldNil struct {$/;"	t
+parseStructTag	rlp/typecache.go	/^func parseStructTag(typ reflect.Type, fi, lastPublic int) (tags, error) {$/;"	f
+plainReader	rlp/decode_test.go	/^type plainReader []byte$/;"	t
+prefixedRlpHash	types/hashing.go	/^func prefixedRlpHash(prefix byte, x interface{}) (h common.Hash) {$/;"	f
+printList	types/hashing_test.go	/^func printList(l types.DerivableList) {$/;"	f
+protected	types/access_list_tx.go	/^func (tx *AccessListTx) protected() bool        { return true }$/;"	f
+protected	types/dynamic_fee_tx.go	/^func (tx *DynamicFeeTx) protected() bool        { return true }$/;"	f
+puthead	rlp/encode.go	/^func puthead(buf []byte, smalltag, largetag byte, size uint64) int {$/;"	f
+putint	rlp/encode.go	/^func putint(b []byte, i uint64) (size int) {$/;"	f
+rawSignatureValues	types/access_list_tx.go	/^func (tx *AccessListTx) rawSignatureValues() (v, r, s *big.Int) {$/;"	f
+rawSignatureValues	types/dynamic_fee_tx.go	/^func (tx *DynamicFeeTx) rawSignatureValues() (v, r, s *big.Int) {$/;"	f
+rawSignatureValues	types/legacy_tx.go	/^func (tx *LegacyTx) rawSignatureValues() (v, r, s *big.Int) {$/;"	f
+rawValueType	rlp/raw.go	/^var rawValueType = reflect.TypeOf(RawValue{})$/;"	v
+readByte	rlp/decode.go	/^func (s *Stream) readByte() (byte, error) {$/;"	f
+readFull	rlp/decode.go	/^func (s *Stream) readFull(buf []byte) (err error) {$/;"	f
+readKind	rlp/decode.go	/^func (s *Stream) readKind() (kind Kind, size uint64, err error) {$/;"	f
+readKind	rlp/raw.go	/^func readKind(buf []byte) (k Kind, tagsize, contentsize uint64, err error) {$/;"	f
+readSize	rlp/raw.go	/^func readSize(b []byte, slen byte) (uint64, error) {$/;"	f
+readUint	rlp/decode.go	/^func (s *Stream) readUint(size byte) (uint64, error) {$/;"	f
+reader	rlp/encode_test.go	/^	reader io.Reader = &encodableReader{1, 2}$/;"	v
+receiptMarshaling	types/receipt.go	/^type receiptMarshaling struct {$/;"	t
+receiptRLP	types/receipt.go	/^type receiptRLP struct {$/;"	t
+receiptStatusFailedRLP	types/receipt.go	/^	receiptStatusFailedRLP     = []byte{}$/;"	v
+receiptStatusSuccessfulRLP	types/receipt.go	/^	receiptStatusSuccessfulRLP = []byte{0x01}$/;"	v
+recoverPlain	types/transaction_signing.go	/^func recoverPlain(sighash common.Hash, R, S, Vb *big.Int, homestead bool) (common.Address, error) {$/;"	f
+recstruct	rlp/decode_test.go	/^type recstruct struct {$/;"	t
+referenceBig	common/hexutil/json_test.go	/^func referenceBig(s string) *big.Int {$/;"	f
+referenceBytes	common/hexutil/json_test.go	/^func referenceBytes(s string) []byte {$/;"	f
+reset	rlp/encode.go	/^func (w *encbuf) reset() {$/;"	f
+rightvrsTx	types/transaction_test.go	/^	rightvrsTx, _ = NewTransaction($/;"	v
+rlp	rlp/decode.go	/^package rlp$/;"	p
+rlp	rlp/decode_tail_test.go	/^package rlp$/;"	p
+rlp	rlp/decode_test.go	/^package rlp$/;"	p
+rlp	rlp/doc.go	/^package rlp$/;"	p
+rlp	rlp/encode.go	/^package rlp$/;"	p
+rlp	rlp/encode_test.go	/^package rlp$/;"	p
+rlp	rlp/encoder_example_test.go	/^package rlp$/;"	p
+rlp	rlp/iterator.go	/^package rlp$/;"	p
+rlp	rlp/iterator_test.go	/^package rlp$/;"	p
+rlp	rlp/raw.go	/^package rlp$/;"	p
+rlp	rlp/raw_test.go	/^package rlp$/;"	p
+rlp	rlp/safe.go	/^package rlp$/;"	p
+rlp	rlp/typecache.go	/^package rlp$/;"	p
+rlp	rlp/unsafe.go	/^package rlp$/;"	p
+rlpHash	types/hashing.go	/^func rlpHash(x interface{}) (h common.Hash) {$/;"	f
+rlpLog	types/log.go	/^type rlpLog struct {$/;"	t
+rlpStorageLog	types/log.go	/^type rlpStorageLog rlpLog$/;"	t
+rpcBlock	ethclient.go	/^type rpcBlock struct {$/;"	t
+rpcProgress	ethclient.go	/^type rpcProgress struct {$/;"	t
+rpcTransaction	ethclient.go	/^type rpcTransaction struct {$/;"	t
+runEncTests	rlp/encode_test.go	/^func runEncTests(t *testing.T, f func(val interface{}) ([]byte, error)) {$/;"	f
+runTests	rlp/decode_test.go	/^func runTests(t *testing.T, decode func([]byte, interface{}) error) {$/;"	f
+sanityCheckSignature	types/transaction.go	/^func sanityCheckSignature(v *big.Int, r *big.Int, s *big.Int, maybeProtected bool) error {$/;"	f
+secp256k1N	crypto/crypto.go	/^	secp256k1N, _  = new(big.Int).SetString("fffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141", 16)$/;"	v
+secp256k1halfN	crypto/crypto.go	/^	secp256k1halfN = new(big.Int).Div(secp256k1N, big.NewInt(2))$/;"	v
+senderFromServer	signer.go	/^type senderFromServer struct {$/;"	t
+setDecoded	types/transaction.go	/^func (tx *Transaction) setDecoded(inner TxData, size int) {$/;"	f
+setFromRLP	types/receipt.go	/^func (r *Receipt) setFromRLP(data receiptRLP) error {$/;"	f
+setSenderFromServer	signer.go	/^func setSenderFromServer(tx *types.Transaction, addr common.Address, block common.Hash) {$/;"	f
+setSignatureValues	types/access_list_tx.go	/^func (tx *AccessListTx) setSignatureValues(chainID, v, r, s *big.Int) {$/;"	f
+setSignatureValues	types/dynamic_fee_tx.go	/^func (tx *DynamicFeeTx) setSignatureValues(chainID, v, r, s *big.Int) {$/;"	f
+setSignatureValues	types/legacy_tx.go	/^func (tx *LegacyTx) setSignatureValues(chainID, v, r, s *big.Int) {$/;"	f
+setStatus	types/receipt.go	/^func (r *Receipt) setStatus(postStateOrStatus []byte) error {$/;"	f
+sigCache	types/transaction_signing.go	/^type sigCache struct {$/;"	t
+signedEip2718Tx	types/transaction_test.go	/^	signedEip2718Tx, _ = emptyEip2718Tx.WithSignature($/;"	v
+simplestruct	rlp/decode_test.go	/^type simplestruct struct {$/;"	t
+sink	rlp/encode_test.go	/^var sink interface{}$/;"	v
+size	rlp/encode.go	/^func (w *encbuf) size() int {$/;"	f
+statusEncoding	types/receipt.go	/^func (r *Receipt) statusEncoding() []byte {$/;"	f
+storedReceiptRLP	types/receipt.go	/^type storedReceiptRLP struct {$/;"	t
+streamPool	rlp/decode.go	/^	streamPool = sync.Pool{$/;"	v
+structFieldError	rlp/typecache.go	/^type structFieldError struct {$/;"	t
+structFields	rlp/typecache.go	/^func structFields(typ reflect.Type) (fields []field, err error) {$/;"	f
+structTagError	rlp/typecache.go	/^type structTagError struct {$/;"	t
+structWithTail	rlp/decode_tail_test.go	/^type structWithTail struct {$/;"	t
+sub	common/math/integer_test.go	/^	sub operation = iota$/;"	c
+tags	rlp/typecache.go	/^type tags struct {$/;"	t
+tailPrivateFields	rlp/decode_test.go	/^type tailPrivateFields struct {$/;"	t
+tailRaw	rlp/decode_test.go	/^type tailRaw struct {$/;"	t
+tailUint	rlp/decode_test.go	/^type tailUint struct {$/;"	t
+testAddr	types/transaction_test.go	/^	testAddr = common.HexToAddress("b94f5374fce5edbc8e2a8697c15331677e6ebf0b")$/;"	v
+testAddrHex	crypto/crypto_test.go	/^var testAddrHex = "970e8128ab834e8eac17ab8e3812f010678cf791"$/;"	v
+testDecodeWithEncReader	rlp/decode_test.go	/^func testDecodeWithEncReader(t *testing.T, n int) {$/;"	f
+testDecoder	rlp/decode_test.go	/^type testDecoder struct{ called bool }$/;"	t
+testEncoder	rlp/encode_test.go	/^type testEncoder struct {$/;"	t
+testEncoderValueMethod	rlp/encode_test.go	/^type testEncoderValueMethod struct{}$/;"	t
+testHasher	types/block_test.go	/^type testHasher struct {$/;"	t
+testPrivHex	crypto/crypto_test.go	/^var testPrivHex = "289c2857d4598e37fb9647507e47a309d6133539bf21a8b9cb6df88fd5232032"$/;"	v
+testTransactionPriceNonceSort	types/transaction_test.go	/^func testTransactionPriceNonceSort(t *testing.T, baseFee *big.Int) {$/;"	f
+testmsg	crypto/signature_test.go	/^	testmsg     = hexutil.MustDecode("0xce0677bb30baa8cf067c88db9811f4333d131bf8bcf12fe7065d211dce971008")$/;"	v
+testpubkey	crypto/signature_test.go	/^	testpubkey  = hexutil.MustDecode("0x04e32df42865e97135acfb65f3bae71bdc86f4d49150ad6a440b6f15878109880a0a2b2667f7e725ceea70c673093bf67663e0312623c8e091b13cf2c0f11ef652")$/;"	v
+testpubkeyc	crypto/signature_test.go	/^	testpubkeyc = hexutil.MustDecode("0x02e32df42865e97135acfb65f3bae71bdc86f4d49150ad6a440b6f15878109880a")$/;"	v
+testsig	crypto/signature_test.go	/^	testsig     = hexutil.MustDecode("0x90f27b8b488db00b00606796d2987f6a5f59ae62ea05effe84fef5b8b0e549984a691139ad57a3f0b906637673aa2f63d1f55cb1a69199d4009eea23ceaddc9301")$/;"	v
+theTC	rlp/typecache.go	/^var theTC = newTypeCache()$/;"	v
+to	types/access_list_tx.go	/^func (tx *AccessListTx) to() *common.Address    { return tx.To }$/;"	f
+to	types/dynamic_fee_tx.go	/^func (tx *DynamicFeeTx) to() *common.Address    { return tx.To }$/;"	f
+to	types/legacy_tx.go	/^func (tx *LegacyTx) to() *common.Address    { return tx.To }$/;"	f
+toBlockNumArg	ethclient.go	/^func toBlockNumArg(number *big.Int) string {$/;"	f
+toBlockNumArg	gethclient/gethclient.go	/^func toBlockNumArg(number *big.Int) string {$/;"	f
+toBytes	rlp/encode.go	/^func (w *encbuf) toBytes() []byte {$/;"	f
+toCallArg	ethclient.go	/^func toCallArg(msg ethereum.CallMsg) interface{} {$/;"	f
+toCallArg	gethclient/gethclient.go	/^func toCallArg(msg ethereum.CallMsg) interface{} {$/;"	f
+toECDSA	crypto/crypto.go	/^func toECDSA(d []byte, strict bool) (*ecdsa.PrivateKey, error) {$/;"	f
+toFilterArg	ethclient.go	/^func toFilterArg(q ethereum.FilterQuery) (interface{}, error) {$/;"	f
+toOverrideMap	gethclient/gethclient.go	/^func toOverrideMap(overrides *map[common.Address]OverrideAccount) interface{} {$/;"	f
+toWriter	rlp/encode.go	/^func (w *encbuf) toWriter(out io.Writer) (err error) {$/;"	f
+tt255	common/math/big.go	/^	tt255     = BigPow(2, 255)$/;"	v
+tt256	common/math/big.go	/^	tt256     = BigPow(2, 256)$/;"	v
+tt256m1	common/math/big.go	/^	tt256m1   = new(big.Int).Sub(tt256, big.NewInt(1))$/;"	v
+tt63	common/math/big.go	/^	tt63      = BigPow(2, 63)$/;"	v
+txExtraInfo	ethclient.go	/^type txExtraInfo struct {$/;"	t
+txHashTest	types/transaction_test.go	/^type txHashTest struct {$/;"	t
+txJSON	types/transaction_marshalling.go	/^type txJSON struct {$/;"	t
+txType	types/access_list_tx.go	/^func (tx *AccessListTx) txType() byte           { return AccessListTxType }$/;"	f
+txType	types/dynamic_fee_tx.go	/^func (tx *DynamicFeeTx) txType() byte           { return DynamicFeeTxType }$/;"	f
+txType	types/legacy_tx.go	/^func (tx *LegacyTx) txType() byte           { return LegacyTxType }$/;"	f
+typeCache	rlp/typecache.go	/^type typeCache struct {$/;"	t
+typeinfo	rlp/typecache.go	/^type typeinfo struct {$/;"	t
+typekey	rlp/typecache.go	/^type typekey struct {$/;"	t
+types	types/access_list_tx.go	/^package types$/;"	p
+types	types/block.go	/^package types$/;"	p
+types	types/block_test.go	/^package types$/;"	p
+types	types/bloom9.go	/^package types$/;"	p
+types	types/bloom9_test.go	/^package types$/;"	p
+types	types/dynamic_fee_tx.go	/^package types$/;"	p
+types	types/gen_access_tuple.go	/^package types$/;"	p
+types	types/gen_header_json.go	/^package types$/;"	p
+types	types/gen_log_json.go	/^package types$/;"	p
+types	types/gen_receipt_json.go	/^package types$/;"	p
+types	types/hashing.go	/^package types$/;"	p
+types	types/legacy_tx.go	/^package types$/;"	p
+types	types/log.go	/^package types$/;"	p
+types	types/log_test.go	/^package types$/;"	p
+types	types/nodeinfo.go	/^package types$/;"	p
+types	types/receipt.go	/^package types$/;"	p
+types	types/receipt_test.go	/^package types$/;"	p
+types	types/transaction.go	/^package types$/;"	p
+types	types/transaction_amino.go	/^package types$/;"	p
+types	types/transaction_marshalling.go	/^package types$/;"	p
+types	types/transaction_signing.go	/^package types$/;"	p
+types	types/transaction_signing_test.go	/^package types$/;"	p
+types	types/transaction_test.go	/^package types$/;"	p
+types_test	types/hashing_test.go	/^package types_test$/;"	p
+uint	rlp/decode.go	/^func (s *Stream) uint(maxbits int) (uint64, error) {$/;"	f
+uint64T	common/hexutil/json.go	/^	uint64T = reflect.TypeOf(Uint64(0))$/;"	v
+uintBits	common/hexutil/hexutil.go	/^const uintBits = 32 << (uint64(^uint(0)) >> 63)$/;"	c
+uintT	common/hexutil/json.go	/^	uintT   = reflect.TypeOf(Uint(0))$/;"	v
+uintp	rlp/decode_test.go	/^func uintp(i uint) *uint { return &i }$/;"	f
+undecodableEncoder	rlp/encode_test.go	/^type undecodableEncoder func()$/;"	t
+unencodableDecoder	rlp/decode_test.go	/^type unencodableDecoder func()$/;"	t
+unhex	rlp/decode_test.go	/^func unhex(str string) []byte {$/;"	f
+unmarshalBigTests	common/hexutil/json_test.go	/^var unmarshalBigTests = []unmarshalTest{$/;"	v
+unmarshalBytesTests	common/hexutil/json_test.go	/^var unmarshalBytesTests = []unmarshalTest{$/;"	v
+unmarshalLogTests	types/log_test.go	/^var unmarshalLogTests = map[string]struct {$/;"	v
+unmarshalTest	common/hexutil/hexutil_test.go	/^type unmarshalTest struct {$/;"	t
+unmarshalUint64Tests	common/hexutil/json_test.go	/^var unmarshalUint64Tests = []unmarshalTest{$/;"	v
+unmarshalUintTests	common/hexutil/json_test.go	/^var unmarshalUintTests = []unmarshalTest{$/;"	v
+v3StoredReceiptRLP	types/receipt.go	/^type v3StoredReceiptRLP struct {$/;"	t
+v4StoredReceiptRLP	types/receipt.go	/^type v4StoredReceiptRLP struct {$/;"	t
+value	types/access_list_tx.go	/^func (tx *AccessListTx) value() *big.Int        { return tx.Value }$/;"	f
+value	types/dynamic_fee_tx.go	/^func (tx *DynamicFeeTx) value() *big.Int        { return tx.Value }$/;"	f
+value	types/legacy_tx.go	/^func (tx *LegacyTx) value() *big.Int        { return tx.Value }$/;"	f
+veryBigInt	rlp/decode_test.go	/^	veryBigInt = new(big.Int).Add($/;"	v
+veryVeryBigInt	rlp/decode_test.go	/^	veryVeryBigInt = new(big.Int).Exp(veryBigInt, big.NewInt(8), nil)$/;"	v
+willRead	rlp/decode.go	/^func (s *Stream) willRead(n uint64) error {$/;"	f
+wordBits	common/math/big.go	/^	wordBits = 32 << (uint64(^big.Word(0)) >> 63)$/;"	c
+wordBytes	common/math/big.go	/^	wordBytes = wordBits \/ 8$/;"	c
+wordBytes	rlp/encode.go	/^const wordBytes = (32 << (uint64(^big.Word(0)) >> 63)) \/ 8$/;"	c
+wrapStreamError	rlp/decode.go	/^func wrapStreamError(err error, typ reflect.Type) error {$/;"	f
+wrapTypeError	common/hexutil/json.go	/^func wrapTypeError(err error, typ reflect.Type) error {$/;"	f
+writeBigInt	rlp/encode.go	/^func writeBigInt(i *big.Int, w *encbuf) error {$/;"	f
+writeBigIntNoPtr	rlp/encode.go	/^func writeBigIntNoPtr(val reflect.Value, w *encbuf) error {$/;"	f
+writeBigIntPtr	rlp/encode.go	/^func writeBigIntPtr(val reflect.Value, w *encbuf) error {$/;"	f
+writeBool	rlp/encode.go	/^func writeBool(val reflect.Value, w *encbuf) error {$/;"	f
+writeByteArray	rlp/encode.go	/^func writeByteArray(val reflect.Value, w *encbuf) error {$/;"	f
+writeBytes	rlp/encode.go	/^func writeBytes(val reflect.Value, w *encbuf) error {$/;"	f
+writeCounter	types/block.go	/^type writeCounter common.StorageSize$/;"	t
+writeInterface	rlp/encode.go	/^func writeInterface(val reflect.Value, w *encbuf) error {$/;"	f
+writeLengthOneByteArray	rlp/encode.go	/^func writeLengthOneByteArray(val reflect.Value, w *encbuf) error {$/;"	f
+writeLengthZeroByteArray	rlp/encode.go	/^func writeLengthZeroByteArray(val reflect.Value, w *encbuf) error {$/;"	f
+writeRawValue	rlp/encode.go	/^func writeRawValue(val reflect.Value, w *encbuf) error {$/;"	f
+writeString	rlp/encode.go	/^func writeString(val reflect.Value, w *encbuf) error {$/;"	f
+writeUint	rlp/encode.go	/^func writeUint(val reflect.Value, w *encbuf) error {$/;"	f
+writer	rlp/typecache.go	/^type writer func(reflect.Value, *encbuf) error$/;"	t
+zeroFields	rlp/decode.go	/^func zeroFields(structval reflect.Value, fields []field) {$/;"	f
