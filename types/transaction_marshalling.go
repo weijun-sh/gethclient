@@ -134,10 +134,10 @@ func (t *Transaction) UnmarshalJSON(input []byte) error {
 			return errors.New("missing required field 'input' in transaction")
 		}
 		itx.Data = *dec.Data
-		if dec.V == nil {
-			return errors.New("missing required field 'v' in transaction")
-		}
-		itx.V = (*big.Int)(dec.V)
+		//if dec.V == nil {
+		//	return errors.New("missing required field 'v' in transaction")
+		//}
+		//itx.V = (*big.Int)(dec.V)
 		if dec.R == nil {
 			return errors.New("missing required field 'r' in transaction")
 		}
@@ -146,12 +146,12 @@ func (t *Transaction) UnmarshalJSON(input []byte) error {
 			return errors.New("missing required field 's' in transaction")
 		}
 		itx.S = (*big.Int)(dec.S)
-		withSignature := itx.V.Sign() != 0 || itx.R.Sign() != 0 || itx.S.Sign() != 0
-		if withSignature {
-			if err := sanityCheckSignature(itx.V, itx.R, itx.S, true); err != nil {
-				return err
-			}
-		}
+		//withSignature := itx.V.Sign() != 0 || itx.R.Sign() != 0 || itx.S.Sign() != 0
+		//if withSignature {
+		//	if err := sanityCheckSignature(itx.V, itx.R, itx.S, true); err != nil {
+		//		return err
+		//	}
+		//}
 
 	case AccessListTxType:
 		var itx AccessListTx
@@ -187,10 +187,10 @@ func (t *Transaction) UnmarshalJSON(input []byte) error {
 			return errors.New("missing required field 'input' in transaction")
 		}
 		itx.Data = *dec.Data
-		if dec.V == nil {
-			return errors.New("missing required field 'v' in transaction")
-		}
-		itx.V = (*big.Int)(dec.V)
+		//if dec.V == nil {
+		//	return errors.New("missing required field 'v' in transaction")
+		//}
+		//itx.V = (*big.Int)(dec.V)
 		if dec.R == nil {
 			return errors.New("missing required field 'r' in transaction")
 		}
@@ -199,12 +199,12 @@ func (t *Transaction) UnmarshalJSON(input []byte) error {
 			return errors.New("missing required field 's' in transaction")
 		}
 		itx.S = (*big.Int)(dec.S)
-		withSignature := itx.V.Sign() != 0 || itx.R.Sign() != 0 || itx.S.Sign() != 0
-		if withSignature {
-			if err := sanityCheckSignature(itx.V, itx.R, itx.S, false); err != nil {
-				return err
-			}
-		}
+		//withSignature := itx.V.Sign() != 0 || itx.R.Sign() != 0 || itx.S.Sign() != 0
+		//if withSignature {
+		//	if err := sanityCheckSignature(itx.V, itx.R, itx.S, false); err != nil {
+		//		return err
+		//	}
+		//}
 
 	case DynamicFeeTxType:
 		var itx DynamicFeeTx
@@ -244,10 +244,10 @@ func (t *Transaction) UnmarshalJSON(input []byte) error {
 			return errors.New("missing required field 'input' in transaction")
 		}
 		itx.Data = *dec.Data
-		if dec.V == nil {
-			return errors.New("missing required field 'v' in transaction")
-		}
-		itx.V = (*big.Int)(dec.V)
+		//if dec.V == nil {
+		//	return errors.New("missing required field 'v' in transaction")
+		//}
+		//itx.V = (*big.Int)(dec.V)
 		if dec.R == nil {
 			return errors.New("missing required field 'r' in transaction")
 		}
@@ -256,12 +256,12 @@ func (t *Transaction) UnmarshalJSON(input []byte) error {
 			return errors.New("missing required field 's' in transaction")
 		}
 		itx.S = (*big.Int)(dec.S)
-		withSignature := itx.V.Sign() != 0 || itx.R.Sign() != 0 || itx.S.Sign() != 0
-		if withSignature {
-			if err := sanityCheckSignature(itx.V, itx.R, itx.S, false); err != nil {
-				return err
-			}
-		}
+		//withSignature := itx.V.Sign() != 0 || itx.R.Sign() != 0 || itx.S.Sign() != 0
+		//if withSignature {
+		//	if err := sanityCheckSignature(itx.V, itx.R, itx.S, false); err != nil {
+		//		return err
+		//	}
+		//}
 
 	default:
 		return ErrTxTypeNotSupported
