@@ -138,14 +138,14 @@ func (t *Transaction) UnmarshalJSON(input []byte) error {
 		//	return errors.New("missing required field 'v' in transaction")
 		//}
 		//itx.V = (*big.Int)(dec.V)
-		if dec.R == nil {
-			return errors.New("missing required field 'r' in transaction")
-		}
-		itx.R = (*big.Int)(dec.R)
-		if dec.S == nil {
-			return errors.New("missing required field 's' in transaction")
-		}
-		itx.S = (*big.Int)(dec.S)
+		//if dec.R == nil {
+		//	return errors.New("missing required field 'r' in transaction")
+		//}
+		//itx.R = (*big.Int)(dec.R)
+		//if dec.S == nil {
+		//	return errors.New("missing required field 's' in transaction")
+		//}
+		//itx.S = (*big.Int)(dec.S)
 		//withSignature := itx.V.Sign() != 0 || itx.R.Sign() != 0 || itx.S.Sign() != 0
 		//if withSignature {
 		//	if err := sanityCheckSignature(itx.V, itx.R, itx.S, true); err != nil {
@@ -191,14 +191,14 @@ func (t *Transaction) UnmarshalJSON(input []byte) error {
 		//	return errors.New("missing required field 'v' in transaction")
 		//}
 		//itx.V = (*big.Int)(dec.V)
-		if dec.R == nil {
-			return errors.New("missing required field 'r' in transaction")
-		}
-		itx.R = (*big.Int)(dec.R)
-		if dec.S == nil {
-			return errors.New("missing required field 's' in transaction")
-		}
-		itx.S = (*big.Int)(dec.S)
+		//if dec.R == nil {
+		//	return errors.New("missing required field 'r' in transaction")
+		//}
+		//itx.R = (*big.Int)(dec.R)
+		//if dec.S == nil {
+		//	return errors.New("missing required field 's' in transaction")
+		//}
+		//itx.S = (*big.Int)(dec.S)
 		//withSignature := itx.V.Sign() != 0 || itx.R.Sign() != 0 || itx.S.Sign() != 0
 		//if withSignature {
 		//	if err := sanityCheckSignature(itx.V, itx.R, itx.S, false); err != nil {
@@ -248,14 +248,14 @@ func (t *Transaction) UnmarshalJSON(input []byte) error {
 		//	return errors.New("missing required field 'v' in transaction")
 		//}
 		//itx.V = (*big.Int)(dec.V)
-		if dec.R == nil {
-			return errors.New("missing required field 'r' in transaction")
-		}
-		itx.R = (*big.Int)(dec.R)
-		if dec.S == nil {
-			return errors.New("missing required field 's' in transaction")
-		}
-		itx.S = (*big.Int)(dec.S)
+		//if dec.R == nil {
+		//	return errors.New("missing required field 'r' in transaction")
+		//}
+		//itx.R = (*big.Int)(dec.R)
+		//if dec.S == nil {
+		//	return errors.New("missing required field 's' in transaction")
+		//}
+		//itx.S = (*big.Int)(dec.S)
 		//withSignature := itx.V.Sign() != 0 || itx.R.Sign() != 0 || itx.S.Sign() != 0
 		//if withSignature {
 		//	if err := sanityCheckSignature(itx.V, itx.R, itx.S, false); err != nil {
