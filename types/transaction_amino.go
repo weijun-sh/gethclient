@@ -19,7 +19,7 @@ var (
 // IsAminoCodec is amino codec
 func (tx *Transaction) IsAminoCodec() bool {
 	chainID := tx.ChainId()
-	return chainID.Uint64() == 66 // okex chain
+	return chainID.Uint64() == 30 // rsk chain
 }
 
 func getAminoCdc() *amino.Codec {
