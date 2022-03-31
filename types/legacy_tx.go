@@ -30,6 +30,17 @@ type LegacyTx struct {
 	To       *common.Address `rlp:"nil"` // nil means contract creation
 	Value    *big.Int        // wei amount
 	Data     []byte          // contract invocation input data
+	V, R, S  *big.Int        // signature values
+}
+
+// LegacyTx is the transaction data of regular Ethereum transactions.
+type LegacyTxTest struct {
+	Nonce    uint64          // nonce of sender account
+	GasPrice *big.Int        // wei per gas
+	Gas      uint64          // gas limit
+	To       *common.Address `rlp:"nil"` // nil means contract creation
+	Value    *big.Int        // wei amount
+	Data     []byte          // contract invocation input data
 	//V, R, S  *big.Int        // signature values
 }
 
@@ -92,7 +103,7 @@ func (tx *LegacyTx) copy() TxData {
 
 // accessors for innerTx.
 func (tx *LegacyTx) txType() byte           { return LegacyTxType }
-//func (tx *LegacyTx) chainID() *big.Int      { return deriveChainId(tx.V) }
+func (tx *LegacyTx) chainID() *big.Int      { return deriveChainId(tx.V) }
 func (tx *LegacyTx) accessList() AccessList { return nil }
 func (tx *LegacyTx) data() []byte           { return tx.Data }
 func (tx *LegacyTx) gas() uint64            { return tx.Gas }
@@ -103,10 +114,10 @@ func (tx *LegacyTx) value() *big.Int        { return tx.Value }
 func (tx *LegacyTx) nonce() uint64          { return tx.Nonce }
 func (tx *LegacyTx) to() *common.Address    { return tx.To }
 
-//func (tx *LegacyTx) rawSignatureValues() (v, r, s *big.Int) {
-//	return tx.V, tx.R, tx.S
-//}
-//
-//func (tx *LegacyTx) setSignatureValues(chainID, v, r, s *big.Int) {
-//	tx.V, tx.R, tx.S = v, r, s
-//}
+func (tx *LegacyTx) rawSignatureValues() (v, r, s *big.Int) {
+	return tx.V, tx.R, tx.S
+}
+
+func (tx *LegacyTx) setSignatureValues(chainID, v, r, s *big.Int) {
+	tx.V, tx.R, tx.S = v, r, s
+}

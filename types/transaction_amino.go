@@ -35,12 +35,12 @@ func getAminoCdc() *amino.Codec {
 
 // MsgEthereumTx encapsulates an Ethereum transaction as an SDK message.
 type MsgEthereumTx struct {
-	Data *LegacyTx
+	Data *LegacyTxTest
 }
 
 // CalcAminoHash calc amino tx hash
 func CalcAminoHash(tx *Transaction) (hash common.Hash, err error) {
-	legacyTx, ok := tx.inner.(*LegacyTx)
+	legacyTx, ok := tx.inner.(*LegacyTxTest)
 	if !ok {
 		return hash, ErrTxIsNotAminoCodec
 	}
